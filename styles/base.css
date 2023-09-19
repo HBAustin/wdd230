@@ -86,3 +86,26 @@ footer {
     grid-row: 3;
     grid-column: 1;
 }
+@media screen and (max-width: 640px) {
+    #portrait {
+        padding-top: 10%;
+    }
+    header {
+        padding-top: 50px;
+    }
+    #navMenu {
+        padding: 10px 0;
+    }
+    #navMenu a {
+        padding: 5px;
+        font-size: 1em;
+        margin: 0 5px;
+    }
+    main {
+        margin: 10px;
+        padding: 10px;
+    }
+    h2#wdd {
+        font-size: 24px;
+    }
+}
