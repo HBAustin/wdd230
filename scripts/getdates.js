@@ -1,4 +1,4 @@
-document.getElementById('year').innerHTML = (new Date).getFullYear();
-const d = new Date();
-d.setDate(d.setDate() + 0)
-document.getElementById("update").innerHTML = "Last Updated: " + " " + d;
+const currentYear = new Date().getFullYear();
+document.querySelector.innerHTML = `&copy; ${currentYear}`;
+const lastModifiedDate = new Date(document.lastModified);
+document.querySelector('footer p:nth-child(2)').innerHTML = `Last Modified: ${lastModifiedDate.toLocaleString()}`;
