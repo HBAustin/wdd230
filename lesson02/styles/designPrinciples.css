@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body, h1, h2, h3, p, a {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Poppins", Arial, sans-serif;
+    background-color: #bfbfbf;
+    color: #333;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr;
+    min-height: 100vh;
+}
+.name {
+    text-align: center;
+    padding: 20px;
+}
+.image {
+    width: 300px;
+    padding: 30px;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
+}
+.content {
+    padding-bottom: 40px;
+}
+.link {
+    text-align: center;
+    font-size: 1.3em;
+}
+header {
+    background-color: #838383;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    grid-row: 1;
+    grid-column: 1;
+    z-index: 1;
+}
+h1, h2 {
+    font-size: 24px;
+    font-family: "Poppins", Arial, sans-serif;
+}
+#navMenu {
+    background-color: #002d5e;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    position: fixed;
+    grid-row: 2;
+    grid-column: 1;
+    z-index: 3;
+}
+#navMenu a {
+    color: white;
+    text-decoration: none;
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 1.6em;
+    margin: 0 10px;
+    border-bottom: 30px;
+    transition: all .2s ease-in-out;
+}
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    grid-row: 2;
+    grid-column: 1;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: "Poppins", Arial, sans-serif;
+    z-index: 2;
+}
+h2#wdd {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+#card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+h3 {
+    background-color:#002d5e;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+footer {
+    background-color: #002d5e;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    grid-row: 3;
+    grid-column: 1;
+}
+@media screen and (max-width: 640px) {
+    #portrait {
+        padding-top: 10%;
+    }
+
+    header {
+        padding-top: 50px;
+    }
+
+    #navMenu {
+        padding: 10px 0;
+    }
+
+    #navMenu a {
+        padding: 5px;
+        font-size: 1em;
+        margin: 0 5px;
+    }
+
+    main {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    h2#wdd {
+        font-size: 24px;
+    }
+}
