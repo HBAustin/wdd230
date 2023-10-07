@@ -1,5 +1,16 @@
 @media (max-width: 800px) {
+    .mobile-logo {
+        position: fixed;
+        z-index: 999;
+        top: 0;
+        left: 0%;
+        padding: 20px
+    }
+    .mobile-logo img {
+        width: 40px;
+    }
     .navigation {
+        z-index: 998;
         background: white;
         margin-top: 0;
         top: 0;
@@ -10,19 +21,19 @@
     }
     .navigation li {
         display: none;
-        z-index: 1;
+        z-index: 998;
     }
     #menu::before {
         content: "≡";
         font-weight: bold;
     }
     #menu {
-        z-index: 1;
-        margin-top: 10px;
-        margin-right: 10px;
+        z-index: 999;
         position: fixed;
         right: 0;
         top: 0;
+        margin-top: 10px;
+        margin-right: 5px;
         display: block;
         font-size: 2rem;
         text-decoration: none;
@@ -31,7 +42,7 @@
         z-index: 999;
         display: block;
         text-align: left;
-        padding-left: 0;
+        padding-top: 50px;
     }
     #menu.show::before {
         content: 'X';
@@ -41,5 +52,56 @@
     .fullSacci {
         display: none;
     }
-    
+    .hero {
+        margin-top: 25%;
+        padding-bottom: 5%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto 1fr;
+        z-index: 1;
+    }
+
+    #kloof {
+        background-color: none;
+        grid-column: 1/ span 2;
+        grid-row: 1;
+        position: relative;
+        padding-bottom: 5%;
+    }
+    #info {
+        margin-top: 20%;
+        margin-right: 2%;
+        margin-left: 2%;
+        font-family: 'Gabarito', 'Arial';
+        border-radius: 20px;
+        z-index: 2;
+        background-color: #002d5edf;
+        color: white;
+        grid-column: 1/ span 2;
+        font-size: 1.2rem;
+        display: flex; 
+        justify-content: center; 
+        align-items: center;
+        height: 50%; 
+    }
+    .join {
+        grid-row: 2;
+        padding: 20px 0;
+    }
+    .smaller {
+        background-color: white;
+        text-align: center;
+        margin: 10px;
+        border-radius: 12px;
+        font-family: 'Montserrat', 'Arial';
+    }
+    .smaller h3 {
+        padding: 10px;
+    }
+    .footer {
+        width: 100%;
+        bottom: 0;
+        padding: 20px;
+        margin: 0;
+    }
 }
