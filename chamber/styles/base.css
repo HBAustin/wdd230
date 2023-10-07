@@ -1,9 +1,6 @@
 body {
     background-color: #BFBFBF;
 }
-button {
-    display: none;
-}
 .navigation {
     background: #fff;
     margin-top: 0;
@@ -42,10 +39,6 @@ button {
 .hero {
     padding-top: 100px;
 }
-footer {
-    position: fixed;
-    bottom: 0;
-}
 #bottom-nav a{
     text-decoration: none;
 }
@@ -54,13 +47,37 @@ footer {
     text-align: center;
     background-color: white;
     width: 100%;
-    left: 0;
-}
-.placeholders {
-    padding-top: 100px;
-    padding: 20px;
 }
 .hero, .cta, .ce, .weather, .spotlights {
     font-family: 'Montserrat', 'Ariel';
     margin-bottom: 10px;
+}
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    background-color: white;
+    border-radius: 8px;
+    padding-top: 0;
+    margin-top: 70px;
+}
+#kloof {
+    border-radius: 8px;
+    width: 100%;
+    grid-column: 2;
+    grid-row: 1 /span 2;
+}
+#info {
+    grid-column: 1;
+    grid-row: 1;
+    font-size: 3rem;
+    text-align: center;
+}
+.joinButton img {
+    margin-top: 60px;
+    margin-left: 190px;
+    border-radius: 30px;
+    grid-column: 1;
+    grid-row: 2;
+    width: 300px;
 }
