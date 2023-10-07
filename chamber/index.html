@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="icon" href="images/favicon.ico">
     <title>Chamber of Commerce | Hayden Austin</title>
 
@@ -29,6 +28,7 @@
 <body>
     <nav>
         <button id="menu"></button>
+        <a class="mobile-logo" href="#"><img src="images/sacci-small.png" alt="nav Logo"></a>
         <ul class="navigation">
             <li><a href="#">Home</a></li>
             <li><a href="#">Discover</a></li>
@@ -36,27 +36,21 @@
             <li><a href="#">Join</a></li>
         </ul>
         <div class="sacci">
-            <a href="#"><img src="images/sacci.png" alt="sacci logo"></a>
+            <a class="fullSacci" href="#"><img src="images/sacci.png" alt="sacci logo"></a>
         </div>
     </nav>
     <main>
         <div class="placeholders">
             <div class="hero">
                 <h1 id="info">Welcome to the South African Chamber of Commerce and Industry website.</h1>
-                <a class="joinButton" href="#"><img src="images/button.png" alt="join button"></a>
-                <img id="kloof" src="images/kloof.jpg" alt="hero image">
+                <a id="join" href="#">Join the Chamber</a>
+                <img id="kloof" src="images/kloof.webp" alt="hero image">
             </div>
-            <div class="cta">
-                 Call to action Placeholder
-             </div>
-             <div class="ce">
-                 Current Events placeholder
-             </div>
-            <div class="weather">
-             Weather card placeholder
-            </div>
-            <div class="spotlights">
-             Spotlights placeholder
+            <div class="smaller">
+                <h3 id="cta">Call to action Placeholder</h3>
+                <h3 id="ce">Current Events Placeholder</h3>
+                <h3 id="weather">Weather Placeholder</h3>
+                <h3 id="spotlights">Spotlights Placeholder</h3>
             </div>
         </div>
     </main>

@@ -1,0 +1,45 @@
+@media (max-width: 800px) {
+    .navigation {
+        background: white;
+        margin-top: 0;
+        top: 0;
+        padding: 40px;
+    }
+    .navigation a {
+        font-size: 1.5rem;
+    }
+    .navigation li {
+        display: none;
+        z-index: 1;
+    }
+    #menu::before {
+        content: "≡";
+        font-weight: bold;
+    }
+    #menu {
+        z-index: 1;
+        margin-top: 10px;
+        margin-right: 10px;
+        position: fixed;
+        right: 0;
+        top: 0;
+        display: block;
+        font-size: 2rem;
+        text-decoration: none;
+    }
+    .show li {
+        z-index: 999;
+        display: block;
+        text-align: left;
+        padding-left: 0;
+    }
+    #menu.show::before {
+        content: 'X';
+        font-family: "Gabarito", 'Arial';
+        font-weight: lighter;
+    }
+    .fullSacci {
+        display: none;
+    }
+    
+}

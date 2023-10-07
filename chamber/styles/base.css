@@ -1,3 +1,6 @@
+@import "/chamber/styles/small.css";
+@import "/chamber/styles/normalize.css";
+
 body {
     background-color: #BFBFBF;
 }
@@ -53,31 +56,43 @@ footer {
     margin-bottom: 10px;
 }
 .hero {
+    margin-top: 4%;
+    margin-right: 1%;
+    margin-left: 1%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto 1fr;
     background-color: white;
     border-radius: 8px;
     padding-top: 0;
-    margin-top: 70px;
+
 }
 #kloof {
     border-radius: 8px;
     width: 100%;
-    grid-column: 2;
-    grid-row: 1 /span 2;
+    height: auto;
+    grid-column: 3/ span 4;
+    grid-row: 1/ span 2;
 }
 #info {
-    grid-column: 1;
+    grid-column: 1/ span 2;
+    text-align: center;
     grid-row: 1;
     font-size: 3rem;
-    text-align: center;
 }
-.joinButton img {
-    margin-top: 60px;
-    margin-left: 190px;
-    border-radius: 30px;
-    grid-column: 1;
+#join {
+    text-decoration: none;
+    border-radius: 15px;
+    font-size: 30px;
+    grid-column: 1 / span 2;
     grid-row: 2;
-    width: 300px;
+    background-color: #002d5e;
+    color: white;
+    text-align: center;
+    padding: 5%;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
