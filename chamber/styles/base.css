@@ -1,0 +1,66 @@
+body {
+    background-color: #BFBFBF;
+}
+button {
+    display: none;
+}
+.navigation {
+    background: #fff;
+    margin-top: 0;
+    margin-right: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: left;
+    padding: 30px;
+}
+.navigation a {
+    text-decoration: none;
+    color: #002d5e;
+}
+.navigation li {
+    display: inline;
+    padding: 30px;
+    font-size: 1.5em;
+    font-family: "Gabarito", "Ariel";
+}
+.navigation li a:hover {
+    text-decoration: underline;
+}
+.sacci img {
+    position: fixed; 
+    top: 0;
+    right: 0;
+    padding-top: 20px;
+    padding-right: 30px;
+    transition: all .2s ease-in-out;
+}
+.sacci img:hover {
+    transform: scale(1.1)
+}
+.hero {
+    padding-top: 100px;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+}
+#bottom-nav a{
+    text-decoration: none;
+}
+footer {
+    font-family: 'Montserrat', 'Ariel';
+    text-align: center;
+    background-color: white;
+    width: 100%;
+    left: 0;
+}
+.placeholders {
+    padding-top: 100px;
+    padding: 20px;
+}
+.hero, .cta, .ce, .weather, .spotlights {
+    font-family: 'Montserrat', 'Ariel';
+    margin-bottom: 10px;
+}
