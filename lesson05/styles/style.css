@@ -52,17 +52,26 @@ button {
         margin-left: 10%;
         margin-right: 10%;
     }
+    label {
+        padding-top: 30px;
+    }
+    input {
+        width: 80%;
+        height: 40px;
+    }
     button {
         width: 80%;
+        height: 50px;
     }
     .whole {
         margin: 0;
     }
     .list {
         margin: 0;
-        padding: 0;
+        padding: 30px;
     }
     .list button {
-        width: auto;
+        width: 40px;
+        height: 40px;
     }
 }
