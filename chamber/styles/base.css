@@ -74,6 +74,13 @@ footer {
     grid-column: 3/ span 4;
     grid-row: 1/ span 2;
 }
+#fallback {
+    border-radius: 8px;
+    width: 100%;
+    height: auto;
+    grid-column: 3/ span 4;
+    grid-row: 1/ span 2;
+}
 header {
     grid-column: 1/ span 2;
     text-align: center;
