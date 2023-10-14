@@ -1,6 +1,6 @@
 @media (max-width: 800px) {
     .mobile-logo {
-        position: absolute;
+        position: fixed;
         z-index: 999;
         top: 0;
         left: 0%;
@@ -15,6 +15,7 @@
         margin-top: 0;
         top: 0;
         padding: 40px;
+        width: 100%;
     }
     .navigation a {
         font-size: 1.5rem;
@@ -23,20 +24,24 @@
         display: none;
         z-index: 998;
     }
+    #menu {
+        font-size: 2rem;
+        z-index: 999;
+        position: fixed;
+        top: 0;
+        right: 0;
+        border-radius: 8px;;
+        margin-top: 10px;
+        margin-right: 7px;
+        width: 90px;
+        height: 60px;
+        background-color: #002d5e;
+        color: white;
+
+    }
     #menu::before {
         content: "≡";
-        font-weight: bold;
-    }
-    #menu {
-        z-index: 999;
-        position: absolute;
-        right: 0;
-        top: 0;
-        margin-top: 10px;
-        margin-right: 5px;
-        display: block;
-        font-size: 2rem;
-        text-decoration: none;
+        font-weight: 600;
     }
     .show li {
         z-index: 999;
@@ -60,7 +65,6 @@
         grid-template-rows: auto 1fr;
         z-index: 1;
     }
-
     #kloof {
         grid-column: 1/ span 2;
         grid-row: 1;
@@ -107,28 +111,63 @@
         display: flex;
         align-items: center;
     }
-    #menu {
-        z-index: 999;
-        position: absolute;
-        right: 0;
-        top: 0;
-        margin-top: 10px;
-        margin-right: 5px;
-        display: block;
-        font-size: 2rem;
-        text-decoration: none;
-    }
     .dark-mode-button {
         z-index: 999;
-        position: absolute;
+        position: fixed;
         font-family: 'Gabarito', 'Arial';
         top: 0;
         right: 0;
-        margin-top: 11px;
+        margin-top: 10px;
         margin-right: 100px;
-        width: 89px;
-        background-color: black;
+        width: 90px;
+        height: 60px;
+        background-color: #002d5e;
         color: white;
-        border-radius: 8px
+        border-radius: 8px;
     }
+    .fyi {
+        font-family: 'Montserrat', 'Arial';
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 0.5fr;
+        padding-left: 20px;
+    }
+    .smaller {
+        margin: 0;
+        grid-column: 1/ span 4;
+        grid-row: 1;
+        background-color: white;
+        text-align: center;
+        border-radius: 8px;
+    }
+    .smaller p {
+        text-align: center;
+    }
+    .weather {
+        grid-column: 1/ span 2;
+        grid-row: 2;
+        margin: 0;
+    }
+    .current {
+        grid-column: 3/ span 4;
+        grid-row: 2;
+        height: 100%;
+    }
+    .footer-content{
+        padding-left: 50px;
+    }
+    .footer-logo {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .footer-logo {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .contact-info {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    
 }

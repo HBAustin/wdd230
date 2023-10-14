@@ -2,13 +2,13 @@ body {
     background-color: #BFBFBF;
 }
 .navigation {
+    width: 100%;
     background: #fff;
     margin-top: 0;
     margin-right: 50px;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
     text-align: left;
     padding: 30px;
 }
@@ -26,7 +26,7 @@ body {
     text-decoration: underline;
 }
 .sacci img {
-    position: absolute; 
+    position: fixed; 
     top: 0;
     right: 0;
     margin-top: 10px;
@@ -46,7 +46,6 @@ body {
     text-decoration: none;
 }
 footer {
-    position: relative;
     font-family: 'Montserrat', 'Ariel';
     text-align: center;
     background-color: white;
@@ -93,33 +92,13 @@ header {
     text-align: center;
     padding: 5%;
     margin: auto;
-    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all .15s ease-in-out;
 }
-.smaller {
-    background-color: white;
-    text-align: center;
-    margin: 0 5%;
-    border-radius: 12px;
-    font-family: 'Montserrat';
-}
-.smaller h3 {
-    padding: 10px
-}
-.bottom-nav {
-    display: grid;
-    grid-template-columns: auto 1fr;
-}
-#contact {
-    grid-column: 1;
-    margin: 20px;
-}
-#date {
-    grid-column: 2;
-    text-align: right;
-    padding-right: 20px;
+#join:hover {
+    transform: scale(1.1);
 }
 .mobile-controls {
     display: flex;
@@ -127,7 +106,7 @@ header {
 }
 .dark-mode-button {
     z-index: 999;
-    position: absolute;
+    position: fixed;
     font-family: 'Gabarito', 'Arial';
     top: 0;
     right: 0;
@@ -136,5 +115,63 @@ header {
     padding: 10px;
     background-color: black;
     color: white;
-    border-radius: 10px;
+    border-radius: 8px;
+}
+.fyi {
+    font-family: 'Montserrat', 'Arial';
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+.smaller {
+    margin-left: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    grid-column: 1/ span 2;
+    grid-row: 1/ span 2;
+    background-color: white;
+    text-align: center;
+    border-radius: 8px;
+}
+.smaller p {
+    text-align: left;
+}
+.weather {
+    margin-right: 20px;
+    grid-column: 3;
+    grid-row: 1;
+    background-color: white;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 0;
+}
+.current {
+    margin-top: 0;
+    margin-right: 20px;
+    grid-column:3;
+    grid-row: 2;
+    background-color: white;
+    text-align: center;
+    border-radius: 8px;
+}
+.footer-content {
+    margin-top: 10px;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+.footer-logo {
+    grid-column: 1;
+    grid-row: 1;
+}
+.contact-info {
+    grid-column: 2;
+    grid-row: 1;
+}
+#date {
+    padding-bottom: 10px;
+}
+hr {
+    width: 90%;
 }

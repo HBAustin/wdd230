@@ -1,34 +1,51 @@
-body.dark-mode {
+.dark-mode {
     background-color: black;
 }
-body.dark-mode .navigation {
+.dark-mode .navigation {
     background-color: #242424;
 }
-body.dark-mode .navigation a {
+.dark-mode .navigation a {
     color: white;
 }
-body.dark-mode .sacci img {
+.dark-mode .sacci img {
     background-color: white;
     padding: 10px;
     border-radius: 10px;
 }
-body.dark-mode .hero {
+.dark-mode .hero {
     background-color: #111111;
     color: white;
 }
-body.dark-mode .darkmode button {
+.dark-mode .darkmode button {
     background-color: white;
     color: black;
 }
-body.dark-mode .smaller {
+.dark-mode .smaller {
     background-color: #111111;
     color: white;
 }
-body.dark-mode footer {
+.dark-mode .smaller h3 {
+    text-decoration: underline;
+}
+.dark-mode footer {
     background-color: #111111;
     color: white;
 }
-body.dark-mode .dark-mode-button {
+.dark-mode .dark-mode-button {
     color: black;
     background-color: white;
+}
+.dark-mode .weather {
+    text-decoration: underline;
+    background-color: #111111;
+    color: white;
+}
+.dark-mode .current {
+    text-decoration: underline;
+    background-color: #111111;
+    color: white;
+}
+.dark-mode #menu {
+    background-color: white;
+    color: black;
 }
