@@ -137,6 +137,7 @@ header {
     text-align: left;
 }
 .weather {
+    padding: 10px;
     margin-right: 20px;
     grid-column: 3;
     grid-row: 1;
@@ -175,4 +176,7 @@ header {
 }
 hr {
     width: 90%;
+}
+.weather img {
+    width: 100px;
 }
