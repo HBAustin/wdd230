@@ -8,6 +8,7 @@
     }
     .mobile-logo img {
         width: 40px;
+        position: absolute;
     }
     .navigation {
         z-index: 998;
