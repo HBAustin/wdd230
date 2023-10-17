@@ -1,0 +1,79 @@
+@media(max-width: 800px) {
+
+    .navigation {
+        background: #002d5e;
+        margin-top: 0;
+        top: 0;
+        padding: 40px;
+    }
+    .navigation a {
+        font-size: 1.5rem;
+    }
+    .navigation li {
+        display: none;
+    }
+    #menu::before {
+        content: "≡";
+    }
+    #menu {
+        font-size: 2rem;
+        z-index: 999;
+        position: fixed;
+        top: 0;
+        right: 0;
+        border-radius: 8px;;
+        margin-top: 10px;
+        margin-right: 7px;
+        width: 90px;
+        height: 60px;
+        background-color: rgb(255, 255, 255);
+        color: #002d5e;
+        display: block;
+    }
+    .show li {
+        display: block;
+        text-align: left;
+    }
+    #menu.show::before {
+        content: 'X'
+    }
+    main h2 {
+        margin: 10px;
+    }
+    #content {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1.5fr 1fr;
+        margin: 10px;
+        margin-top: 0;
+    }
+    .activities {
+        grid-column: 1;
+        grid-row: 1;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .card {
+        grid-column: 1;
+        grid-row: 2;
+        margin: 0;
+        margin-top: 10px;
+    }
+    iframe {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    #map1 {
+        display: none;
+    }
+    #map2 {
+        display: block;
+        margin: 10px;
+        border-radius: 8px;
+        grid-column: 1;
+        grid-row: 1;
+    }
+}

@@ -3,7 +3,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #bfbfbf;
+    background-color: #002d5e;
     color: #333;
     font-family: Arial, sans-serif;
     display: grid;
@@ -19,6 +19,9 @@ header {
     padding-top: 100px;
     grid-row: 1;
     grid-column: 1;
+}
+main {
+    background-color: #bfbfbf;
 }
 #portrait {
     max-width: 250px;
@@ -50,15 +53,44 @@ header {
     font-size: 1.5em;
 }
 main {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: white;
     grid-row: 2;
-    grid-column: 1;
+}
+main h2 {
+    text-align: center;
+    background-color: #002d5e;
+    color: white;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    font-family: "Poppins", Arial, sans-serif;
+}
+#content {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+}
+.activities {
+    grid-column: 1;
+    background-color: white;
+    margin: 15px;
+    padding: 10px;
+    border-radius: 8px;
+    margin-right: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.activities h3{
+    text-align: center;
+}
+.card {
+    grid-column: 2;
+    background-color: white;
+    margin: 15px;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.card h3 {
+    text-align: center;
 }
 h2#wdd {
     font-size: 28px;
@@ -81,43 +113,34 @@ footer {
     padding: 10px;
     grid-row: 3;
     grid-column: 1;
+    position: relative;
+    bottom: 0;
 }
-
-/* Mobile view */
-
-@media(max-width: 800px) {
-
-    .navigation {
-        background: #002d5e;
-        margin-top: 0;
-        top: 0;
-        padding: 40px;
-    }
-    .navigation a {
-        font-size: 1.5rem;
-    }
-    .navigation li {
-        display: none;
-    }
-    #menu::before {
-        content: "≡";
-    }
-    #menu {
-        margin-top: 10px;
-        margin-right: 10px;
-        z-index: 1;
-        position: fixed;
-        right: 0;
-        top: 0;
-        display: block;
-        font-size: 2rem;
-        text-decoration: none;
-    }
-    .show li {
-        display: block;
-        text-align: left;
-    }
-    #menu.show::before {
-        content: 'X'
-    }
+ul li {
+    padding: 5px;
+}
+ul li a {
+    text-decoration: none;
+    color: purple;
+}
+ul li a:hover {
+    text-decoration: underline;
+}
+button {
+    display: none;
+}
+iframe {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;   
+}
+#map1{
+    margin: 30px;
+    margin-top: 0;
+    grid-column: 1;
+    grid-row: 1;
+}
+#map2 {
+    display: none;
 }
