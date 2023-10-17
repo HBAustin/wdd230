@@ -1,9 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
 body {
     margin: 0;
     padding: 0;
-    background-color: #002d5e;
     color: #333;
     font-family: Arial, sans-serif;
     display: grid;
@@ -34,18 +31,20 @@ main {
     font-size: 24px;
     font-family: "Poppins", Arial, sans-serif;
 }
-.navigation {
-    background: #002d5e;
-    margin-top: 0;
-    position: fixed;
+.navbar {
+    position: absolute;
     top: 0;
+    background-color: #002d5e;
     width: 100%;
     text-align: center;
-    padding: 40px;
+    padding: 20px 0;
 }
 .navigation a {
     text-decoration: none;
     color: white;
+}
+.navigation a:hover {
+    text-decoration: underline;
 }
 .navigation li {
     display: inline;
@@ -132,17 +131,19 @@ button {
     display: none;
 }
 iframe {
-    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    margin-left: 25%;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;   
 }
-#map1{
-    margin: 30px;
-    margin-top: 0;
-    grid-column: 1;
-    grid-row: 1;
+.maps{
+    margin-bottom:15px;
 }
-#map2 {
-    display: none;
+.hero img {
+    border-radius: 8px;
+    width: 40%;
+    margin-left: 30%;
 }

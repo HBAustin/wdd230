@@ -8,6 +8,11 @@
         <link rel="stylesheet" href="styles/normalize.css">
         <link rel="stylesheet" href="styles/base.css">
         <link rel="stylesheet" href="styles/small.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+        
         <link rel="icon" href="favicon.ico">
         <title>Hayden Austin - WDD 230 - Web Frontend Development</title>
     
@@ -19,20 +24,29 @@
     </head>
     <body>
         <header>
-            <img id="portrait" src="images/hayden.jpg" alt="portrait image">
+            <img id="portrait" src="images/hayden.webp" alt="portrait image">
             <h1 id="name">Hayden Austin</h1>
         </header>
         <nav>
             <button id="menu"></button>
-            <ul class="navigation">
-                <li><a href="#">Home</a></li>
-                <li><a href="lesson03/chamber-site-plan.html" target="_blank">Site Plan</a></li>
-                <li><a href="chamber/" target="_blank">Chamber</a></li>
-                <li><a href="https://www.byui.edu" target="_blank">BYU-Idaho</a></li>
-                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/nt/john/8?id=p7&lang=eng#p7" target="_blank">Scripture</a></li>
-            </ul>
+            <div class="navbar">
+                <ul class="navigation">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="lesson03/chamber-site-plan.html" target="_blank">Site Plan</a></li>
+                    <li><a href="chamber/" target="_blank">Chamber</a></li>
+                    <li><a href="https://www.byui.edu" target="_blank">BYU-Idaho</a></li>
+                    <li><a href="https://www.churchofjesuschrist.org/study/scriptures/nt/john/8?id=p7&lang=eng#p7" target="_blank">Scripture</a></li>
+                </ul>
+            </div>
         </nav>
         <main>
+            <div class="hero">
+                <h2>Favorite Temple</h2>
+                <picture>
+                    <source srcset="images/hero-small.webp" media="(max-width: 500px)">
+                    <img src="images/hero-large.webp" alt="hero image" width="1500">
+                </picture>
+            </div>
             <h2 id="wdd">WDD 230: Web Frontend Development</h2>
             <div id="content">
                 <section class="activities">
@@ -62,11 +76,8 @@
                 </section>
             </div>
             <div class="maps">
-                <div id="map1">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27699.8141760342!2d30.811692814263107!3d-29.79276747827561!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ef6fbf4670e08cd%3A0xd7a76b19c86610d!2sKloof%2C%203640!5e0!3m2!1sen!2sza!4v1697538854798!5m2!1sen!2sza" width="1440" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-                <div id="map2">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27699.8141760342!2d30.811692814263107!3d-29.79276747827561!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ef6fbf4670e08cd%3A0xd7a76b19c86610d!2sKloof%2C%203640!5e0!3m2!1sen!2sza!4v1697538854798!5m2!1sen!2sza" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27699.8141760342!2d30.811692814263107!3d-29.79276747827561!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ef6fbf4670e08cd%3A0xd7a76b19c86610d!2sKloof%2C%203640!5e0!3m2!1sen!2sza!4v1697538854798!5m2!1sen!2sza" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </main>
