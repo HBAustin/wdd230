@@ -42,7 +42,7 @@
             <li><a href="#">Join</a></li>
         </ul>
         <div class="sacci">
-            <a class="fullSacci" href="#"><img src="images/sacci.png" alt="sacci logo"></a>
+            <a class="fullSacci" href="#"><img src="images/sacci.webp" alt="sacci logo"></a>
         </div>
     </nav>
     <main>
@@ -52,9 +52,10 @@
                     <h1 id="info">Welcome to the South African Chamber of Commerce and Industry website.</h1>
                 </header>
                 <picture>
-                    <source media="(min-width: 800px)" srcset="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Kloof_vanaf_Krantzkloof-hoogtes.jpg/1024px-Kloof_vanaf_Krantzkloof-hoogtes.jpg">
-                    <source media="(min-width: 200px)" srcset="https://visitdurban.travel/wp-content/uploads/2020/05/kloof.jpg">
-                    <img id="fallback" src="images/kloof.webp" alt="hero image">
+                    <source media="(min-width: 800px)" srcset="images/hero-medium.webp">
+                    <source media="(min-width: 200px)" srcset="images/hero-small.webp">
+                    <source media="(min-width: 1000px)" srcset="images/hero-large.webp">
+                    <img id="fallback" src="images/hero-medium.webp" alt="hero image">
                 </picture>
                 <a id="join" href="#">Join the Chamber</a>
             </div>
@@ -71,8 +72,10 @@
                     </p>
                 </div>
                 <div class="weather">
-                    <p>Weather (placeholder)</p>
-                    <img class="sun" src="images/sun.webp" alt="sun image">
+                    <p>Weather</p>
+                    <p>Current Temperature: <span id="temperature">40°F</span></p>
+                    <p>Wind Speed: <span id="windspeed">5.0 mph</span></p>
+                    <p>Wind Chill: <span id="windchill">Calculating...</span></p>
                 </div>
                 <div class="current">
                     <p>Current Events</p>
@@ -102,5 +105,6 @@
     <script src="scripts/getdates.js"></script>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/darkmode.js"></script>
+    <script src="scripts/windchill.js"></script>
 </body>
 </html>
