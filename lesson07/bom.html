@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Hayden Austin">
+    <meta name="description" content="WDD 230, Hayden Austin, home page of the BoM Assignment">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/bom.css">
+    
+    <title>Book of Mormon | Hayden Austin</title>
+</head>
+<body>
+    <h1>Book of Mormon - Top 10</h1>
+    <main>
+        <div class="whole">
+            <label>Enter the Book and Chapter: </label>
+            <input type="text" id="favchap" placeholder="Input... (e.g. Alma 5)">
+            <button id="button" type="submit">Add</button>
+            <div class="mainList">
+                <ul class="list"></ul>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> Hayden Austin | South Africa</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/bom.js"></script>
+</body>
+</html>
