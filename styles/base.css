@@ -65,17 +65,21 @@ main h2 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 #content {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 20px;
     display: grid;
     grid-template-columns: 1.5fr 1fr;
 }
 .activities {
     grid-column: 1;
     background-color: white;
-    margin: 15px;
     padding: 10px;
-    border-radius: 8px;
+    margin: 1px;
     margin-right: 0;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 .activities h3{
     text-align: center;
@@ -84,14 +88,18 @@ main h2 {
 .card {
     grid-column: 2;
     background-color: white;
-    margin: 15px;
-    padding: 10px;
-    border-radius: 8px;
+    margin: 1px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-align: center;
 }
 .card h3 {
-    text-align: center;
+    padding: 10px;
     text-decoration: underline;
+}
+.card p {
+    padding: 50px;
 }
 h2#wdd {
     font-size: 28px;
