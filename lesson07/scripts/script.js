@@ -6,7 +6,4 @@ document.addEventListener("DOMContentLoaded", function() {
         img.removeAttribute("data-src");
         img.onload = () => img.style.opacity = 1;
     });
-
-    const lastModified = document.getElementById("lastModified");
-    lastModified.textContent = document.lastModified;
 })
