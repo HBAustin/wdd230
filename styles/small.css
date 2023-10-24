@@ -66,17 +66,16 @@
     iframe {
         border-radius: 8px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        width: 100%;
+        width: 90%;
         margin: 0;
-    }
-    .hero p{
-        font-size: 1.5rem;
-        margin-left: 10%;
-        margin-right: 10%;
+        margin-left: 5%;
     }
     .hero img {
         width: 90%;
         margin: 0;
         margin-left: 5%;
+    }
+    .hero {
+        margin-top: 15px;
     }
 }
