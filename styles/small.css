@@ -1,5 +1,4 @@
-@media(max-width: 800px) {
-
+@media (max-width: 800px) {
     body {
         background-color: #002d5e;
     }
@@ -24,7 +23,7 @@
         position: absolute;
         top: 0;
         right: 0;
-        border-radius: 8px;;
+        border-radius: 8px;
         margin-top: 10px;
         margin-right: 7px;
         width: 90px;
@@ -38,7 +37,7 @@
         text-align: left;
     }
     #menu.show::before {
-        content: 'X'
+        content: 'X';
     }
     main h2 {
         margin: 10px;
@@ -56,12 +55,25 @@
         width: 100%;
         margin: 0;
         padding: 0;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
     }
     .card {
         grid-column: 1;
         grid-row: 2;
         margin: 0;
-        margin-top: 10px;
+        margin-top: 1px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+    .card p {
+        padding: 30px;
+    }
+    h2#wdd {
+        border-radius: 20px;
     }
     iframe {
         border-radius: 8px;

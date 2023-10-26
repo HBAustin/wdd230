@@ -1,12 +1,21 @@
 body {
     background-color: #BFBFBF;
 }
+#menu {
+    display: none;
+}
+main {
+    padding-top: 50px;
+}
+.mobile-logo {
+    display: none;
+}
 .navigation {
+    position: fixed;
     width: 100%;
     background: #fff;
     margin-top: 0;
     margin-right: 50px;
-    position: fixed;
     top: 0;
     left: 0;
     text-align: left;
@@ -26,11 +35,11 @@ body {
     text-decoration: underline;
 }
 .sacci img {
-    position: fixed; 
+    position: absolute; 
     top: 0;
     right: 0;
     margin-top: 10px;
-    margin-right: 30px;
+    margin-right: 170px;
     background-color: white;
     padding: 10px;
     border-radius: 10px;
@@ -114,7 +123,7 @@ header {
     top: 0;
     right: 0;
     margin-top: 20px;
-    margin-right: 250px;
+    margin-right: 50px;
     padding: 10px;
     background-color: #002d5e;
     color: white;
@@ -182,4 +191,4 @@ hr {
 }
 .weather img {
     width: 100px;
-}
+} 

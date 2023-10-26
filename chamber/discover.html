@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="stylesheet" href="styles/darkmode.css">
     <link rel="icon" href="images/favicon.ico">
-    <title>Chamber | Home</title>
+    <title>Chamber | Discover</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,7 +28,6 @@
     <meta property="og:url" content="https://hbaustin.github.io/wdd230/chamber/">
 
 </head>
-<header></header>
 <body style="display:none;">
     <nav>
         <div class="mobile-controls">
@@ -37,8 +36,8 @@
         </div>
         <a class="mobile-logo" href="#"><img src="images/favicon.ico" alt="nav Logo"></a>
         <ul class="navigation">
-            <li><a href="#">Home</a></li>
-            <li><a href="discover.html">Discover</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Discover</a></li>
             <li><a href="#">Directory</a></li>
             <li><a href="#">Join</a></li>
         </ul>
@@ -47,39 +46,19 @@
         </div>
     </nav>
     <main>
-        <div class="placeholders">
-            <div class="hero">
-                <header>
-                    <h1 id="info">Welcome to the South African Chamber of Commerce and Industry website</h1>
-                </header>
-                <picture>
-                    <source media="(min-width: 800px)" srcset="https://wheretostay.co.za/_wts4/resources/0/1/2/01290/120278_xl.jpg">
-                    <source media="(min-width: 200px)" srcset="https://visitdurban.travel/wp-content/uploads/2020/05/kloof.jpg">
-                    <img id="fallback" src="images/hero-medium.webp" alt="hero image">
-                </picture>
-                <a id="join" href="#">Join the Chamber</a>
+        <div class="sidebar">
+            <div class="message">
+                <p id="message"></p>
             </div>
-            <div class="fyi">
-                <div class="smaller">
-                    <h3>Call to action</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in odio convallis, 
-                        ullamcorper dui ac, interdum ex. Vestibulum euismod nunc ante, eget pretium arcu
-                         vestibulum eu. Morbi id mollis leo, rhoncus elementum diam. Phasellus nisl nisi, 
-                         hendrerit ac nisi sed, rutrum vehicula lorem. Vivamus feugiat pellentesque elementum. 
-                         Nullam et augue nec justo tristique fringilla vitae quis nibh. Suspendisse dolor sem, 
-                         rhoncus eget nisi vitae, pharetra auctor dolor. Ut tortor orci, iaculis sed sem et, 
-                         ornare faucibus urna.
-                    </p>
-                </div>
-                <div class="weather">
-                    <p>Weather</p>
-                    <p>Current Temperature: <span id="temperature">40°F</span></p>
-                    <p>Wind Speed: <span id="windspeed">5.0 mph</span></p>
-                    <p>Wind Chill: <span id="windchill">Calculating...</span></p>
-                </div>
-                <div class="current">
-                    <p>Current Events</p>
-                </div>
+        </div>
+        <div class="gallery">
+            <div class="image" data-src="images/image1.jpg">
+                <img src="images/placeholder.jpg" alt="Image 1" />
+                <p>Caption 1</p>
+            </div>
+            <div class="image" data-src="images/image2.jpg">
+                <img src="images/placeholder.jpg" alt="Image 2" />
+                <p>Caption 2</p>
             </div>
         </div>
     </main>
