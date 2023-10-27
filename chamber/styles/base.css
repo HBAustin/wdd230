@@ -206,12 +206,17 @@ hr {
 }
 .sidebar {
     border-radius: 20px;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-family: 'Gabarito', 'Arial';
     padding: 20px;
     grid-column: 1;
     grid-row: 1;
     background-color: white;
+    color: #002d5e
+}
+.sidebar p {
+    font-size: 1.5rem;
+    color: black;
 }
 .rightbar {
     padding: 30px;
