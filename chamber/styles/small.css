@@ -189,5 +189,12 @@
     .rightbar {
         grid-column: 1; 
         grid-row: 4;
+        display: grid;
+    }
+    .rightbar img {
+        grid-column: 1/ span 2;
+    }
+    .rightbar img:hover {
+        transform: none;
     }
 }
