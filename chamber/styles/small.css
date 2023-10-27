@@ -9,6 +9,7 @@
         padding-left: 15px;
     }
     .navigation {
+        z-index: 998;
         width: 85%;
         padding-bottom: 50px;
         position: absolute;
@@ -18,7 +19,10 @@
     }
     .navigation li {
         display: none;
-        z-index: 998;
+        z-index: 999;
+    }
+    #info {
+        z-index: 1;
     }
     #menu {
         display:block;
@@ -50,16 +54,15 @@
         font-family: "Gabarito", 'Arial';
         font-weight: lighter;
     }
-    .fullSacci {
+    .sacci {
         display: none;
     }
     .hero {
-        margin-top: 25%;
+        padding-top: 20px;
         padding-bottom: 5%;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto 1fr;
-        z-index: 1;
     }
     picture {
         grid-column: 1/ span 2;
