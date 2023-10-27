@@ -56,6 +56,9 @@
     color: white;
     background-color: #111111;
 }
+.dark-mode .sidebar p {
+    color: white;
+}
 .dark-mode .rightbar {
     color: white;
     background-color: #111111;
