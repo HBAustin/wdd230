@@ -52,3 +52,15 @@
 .dark-mode #join {
     background-color: #0062cb;
 }
+.dark-mode .sidebar {
+    color: white;
+    background-color: #111111;
+}
+.dark-mode .rightbar {
+    color: white;
+    background-color: #111111;
+}
+.dark-mode .sidebar2 {
+    color: white;
+    background-color: #111111;
+}
