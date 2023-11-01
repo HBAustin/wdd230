@@ -1,0 +1,70 @@
+body {
+    background-color: #bfbfbf;
+    font-family: 'Poppins', 'Arial';
+}
+/* Imported Custom Properties */
+:root {
+    --main-bk-color: #003459;
+    --secondary-bk-color: #fff4f4;
+    --main-font-color: white;
+    --secondary-font-color: rgba(255, 255, 0, 0.734);
+    --title-font-family: 'Ubuntu';
+    --main-font-family: 'Roboto Mono';
+    /* Table properties */
+    --main-th-bk: black;
+    --secondary-th-bk: #555555;
+    --border: #555555;
+    --zebra: #eeeeee;
+}
+header {
+    background-color: #002d5e;
+    border-radius: 15px;
+    width: 30%;
+    margin-left: 35%;
+    text-align: center;
+    color: white;
+}
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    color: white;
+    background-color: #002d5e;
+}
+table {
+    border: thin solid var(--border);
+    border-collapse: collapse;
+    width: 40%;
+    margin-left: 30%;
+}
+caption {
+    caption-side: bottom;
+    font-size: 0.8rem;
+}
+td {
+    color: white;
+    text-align: center;
+}
+th {
+    color: white;
+    text-align: center;
+    padding: 0.75em 2em;
+}
+thead :first-child {
+    background-color: #191919;
+}
+thead :nth-child(2) {
+    background-color: #002d5e;
+}
+tbody * {
+    border: thin solid var(--border);
+    color: black;
+}
+tbody tr:nth-child(odd) {
+    background-color: #e9e9e9;
+}
+tbody tr:nth-child(even) {
+    background-color: #787878;
+}
