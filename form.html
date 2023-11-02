@@ -38,9 +38,7 @@
             <form action="record.html" method="get" onsubmit="return validateForm();">
                 <label class="top" for="username">Username: <input type="text" id="username" name="username" required></label>
                 <label class="top" for="password">Password:<input type="password" id="password" name="password" required pattern="[a-zA-Z0-9]{8,}" title="Password must be at least 8 characters" placeholder="Password must be 8 characters"></label>
-                <label class="top" for="confirmPassword">Confirm Password:
-                    <input type="password" id="confirmPassword" name="confirmPassword" required>
-                </label>
+                <label class="top" for="confirmPassword">Confirm Password:<input type="password" id="confirmPassword" name="confirmPassword" required></label>
                 <div id="passwordError" style="color: red; display: none;">Passwords do not match!</div>
                 <label class="top" for="email">Email: <input type="email" id="email" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Please enter a valid email address"></label>
 
@@ -48,7 +46,7 @@
                 <input type="range" id="pageRating" name="pageRating" min="1" max="10" step="1">
                 <output for="pageRating">0</output>
 
-                <button type="submit">Share my Feedback</button>
+                <button type="submit">Share page rating</button>
             </form>
         </section>
     </main>
