@@ -53,11 +53,3 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: var(--button-hover-color);
 }
-
-form label.top input:required {
-    border-left: red solid 6px;
-}
-
-form label.top input:required:valid {
-    border-left: green solid 6px;
-}
