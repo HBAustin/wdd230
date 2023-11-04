@@ -29,6 +29,7 @@
     <meta property="og:url" content="https://hbaustin.github.io/wdd230/chamber/">
 
 </head>
+<header></header>
 <body>
     <nav>
         <div class="mobile-controls">
@@ -40,7 +41,7 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="discover.html">Discover</a></li>
             <li><a href="#">Directory</a></li>
-            <li><a href="#">Join</a></li>
+            <li><a href="join.html">Join</a></li>
         </ul>
         <div class="sacci">
           <img src="images/sacci.webp" alt="sacci logo">
@@ -48,40 +49,11 @@
     </nav>
     <main>
         <h1>Join Our Chamber</h1>
-        <form action="thankyou.html" method="get">
-            <label class="top" for="first-name">Applicant's First Name:</label>
-            <input type="text" id="first-name" name="first-name" required>
-
-            <label class="top" for="last-name">Applicant's Last Name:</label>
-            <input type="text" id="last-name" name="last-name" required>
-
-            <label for="position">Applicant's Title or Position:</label>
-            <input type="text" id="position" name="position" pattern="[A-Za-z -]{7,}" title="Please enter at least 7 characters containing only letters, hyphens, or spaces (no numbers or special characters).">
-
-            <label class="top" for="email">Email Address:</label>
-            <input type="email" id="email" name="email" required placeholder="someone@email.com">
-
-            <label class="top" for="phone">Mobile Phone Number:</label>
-            <input type="tel" id="phone" name="phone" required placeholder="1235551234">
-
-            <label class="top" for="organization">Business/Organization Name:</label>
-            <input type="text" id="organization" name="organization" required>
-
-            <label for="membership-level">Membership Level:</label>
-            <select id="membership-level" name="membership-level">
-                <option value="NP Membership">NP Membership (No Fee)</option>
-                <option value="Bronze Membership">Bronze Membership</option>
-                <option value="Silver Membership">Silver Membership</option>
-                <option value="Gold Membership">Gold Membership</option>
-            </select>
-
-            <label for="description">Business/Organization Description:</label>
-            <textarea id="description" name="description"></textarea>
-
-            <input type="hidden" id="timestamp" name="timestamp" value="current-date-and-time">
-
-            <input class="button" type="submit" value="Join the chamber">
-        </form>
+        <h3> Thank you for your interest in joining our chamber!</h3>
+        <div class="home">
+            <p> We will get back to you as soon as possible</p>
+            <a href="index.html"><button>Home Page</button></a>
+        </div>  
     </main>
     <footer>
         <section class="bottom-nav">

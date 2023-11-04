@@ -67,3 +67,14 @@
     color: white;
     background-color: #111111;
 }
+.dark-mode form {
+    background-color: rgb(49, 49, 49);
+    color: white;
+}
+.dark-mode .home button {
+    background-color:#0062cb; 
+}
+.dark-mode main h3,.dark-mode main p {
+    background-color: #242424;
+    color: white;
+}
