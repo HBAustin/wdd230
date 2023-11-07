@@ -1,0 +1,38 @@
+{
+    "familyName": "Austin",
+    "dateMoved": "2002",
+    "familyAmmount": "6",
+    "bishopricVisit": "true",
+    "members" : [
+        {
+            "name": "Nathan Austin",
+            "gender": "male",
+            "birthdate": "January 13, 1975"
+        },
+        {
+            "name": "Chrystal Austin",
+            "gender": "female",
+            "birdate": "July 06, 1976"
+        },
+        {
+            "name": "Connor Austin",
+            "gender": "male",
+            "birdate": "August 31, 1999"
+        },
+        {
+            "name": "Calden Austin",
+            "gender": "male",
+            "birdate": "April 23, 2001"
+        },
+        {
+            "name": "Hayden Austin",
+            "gender": "male",
+            "birdate": "December 11, 2002"
+        },
+        {
+            "name": "Kendra Austin",
+            "gender": "female",
+            "birdate": "August 29, 2006"
+        }
+    ]
+}
