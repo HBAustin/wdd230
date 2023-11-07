@@ -1,4 +1,4 @@
-@media (min-width: 200px) {
+@media (max-width: 400px) {
     .mobile-logo {
         display: flex;
         position: absolute;
