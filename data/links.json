@@ -1,0 +1,146 @@
+{
+    "lessons": [
+      {
+        "lesson": "01",
+        "links": [
+          {
+            "url": "week1/learning-activity-1.html",
+            "title": "Introduction to Web Development"
+          },
+          {
+            "url": "week1/learning-activity-2.html",
+            "title": "HTML Basics"
+          }
+        ]
+      },
+      {
+        "lesson": "02",
+        "links": [
+          {
+            "url": "lesson02/design-principles.html",
+            "title": "Design Principles (Assignment)"
+          },
+          {
+            "url": "lesson02/design.html",
+            "title": "Design"
+          }
+        ]
+      },
+      {
+        "lesson": "03",
+        "links": [
+          {
+            "url": "lesson03/images/combinators.png",
+            "title": "Combinators"
+          },
+          {
+            "url": "https://codepen.io/hbaustin/pen/NWezaOw",
+            "title": "Pseudo Elements"
+          },
+          {
+            "url": "https://codepen.io/hbaustin/pen/VwqdzpB",
+            "title": "Hamburger Menu"
+          },
+          {
+            "url": "lesson03/chamber-site-plan.html",
+            "title": "Chamber Site Plan"
+          }
+        ]
+      },
+      {
+        "lesson": "04",
+        "links": [
+          {
+            "url": "https://codepen.io/hbaustin/pen/jOXeBVX",
+            "title": "Pseudo Classes"
+          },
+          {
+            "url": "chamber/index.html",
+            "title": "Chamber Home"
+          }
+        ]
+      },
+      {
+        "lesson": "05",
+        "links": [
+          {
+            "url": "lesson05/bom.html",
+            "title": "BOM exercise"
+          },
+          {
+            "url": "chamber/index.html",
+            "title": "Chamber Home (week05)"
+          }
+        ]
+      },
+      {
+        "lesson": "06",
+        "links": [
+          {
+            "url": "lesson06/images/landscape.webp",
+            "title": "WebP"
+          },
+          {
+            "url": "lesson06/responsive-images.html",
+            "title": "Responsive Images"
+          },
+          {
+            "url": "chamber/index.html",
+            "title": "Chamber Home (week06)"
+          }
+        ]
+      },
+      {
+        "lesson": "07",
+        "links": [
+          {
+            "url": "lesson07/lazyload.html",
+            "title": "Lazy Load"
+          },
+          {
+            "url": "lesson07/bom.html",
+            "title": "BOM exercise (updated)"
+          },
+          {
+            "url": "chamber/discover.html",
+            "title": "Chamber Discover Page"
+          }
+        ]
+      },
+      {
+        "lesson": "08",
+        "links": [
+          {
+            "url": "lesson08/tablebuild.html",
+            "title": "HTML Table"
+          },
+          {
+            "url": "form-start/index.html",
+            "title": "Web Forms"
+          },
+          {
+            "url": "form.html",
+            "title": "Form activity"
+          },
+          {
+            "url": "chamber/index.html",
+            "title": "Chamber (week 8)"
+          }
+        ]
+      },
+      {
+        "lesson": "09",
+        "links": [
+          {
+            "url": "lesson09/new-ward-members.json",
+            "title": "JSON activity"
+          },
+          {
+            "url": "lesson09/prophets.html",
+            "title": "Latter-day Prophets"
+          }
+        ]
+      }
+    ]
+  }
+  
