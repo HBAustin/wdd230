@@ -197,4 +197,9 @@
     .rightbar img:hover {
         transform: none;
     }
+    .joinHeader {
+        font-size: 1.5rem;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
 }
