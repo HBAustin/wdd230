@@ -155,3 +155,9 @@ iframe {
     margin-top: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+#links-container div {
+    padding: 10px;
+}
+#links-container .url {
+    text-decoration: none;
+}
