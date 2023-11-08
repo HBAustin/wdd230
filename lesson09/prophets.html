@@ -2,18 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prophets</title>
+    <link rel="stylesheet" href="styles/prophets.css">
+    <link rel="icon" href="../favicon.ico">
+    <title>Prophets | Hayden Austin</title>
+    
 </head>
 <body>
+
     <header>
         <h1>Latter-day Prophets</h1>
-      </header>
-      <main>
-        <div id="cards"></div>
-      </main>
-      <footer>
-        Hayden Austin | Latter-day Prophets
-      </footer>
+    </header>
+
+    <main>
+        <div class="filters">
+            <button class="filter" id="no-filter">No filter</button>
+            <button class="filter" id="decade-filter">Served more than a decade</button>
+        </div>
+        <div class="cards">
+        </div>
+    </main>
+
+    <footer>
+        <h3>Hayden Austin | Latter-day Prophets</h3>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/prophets.js"></script>
 </body>
 </html>
