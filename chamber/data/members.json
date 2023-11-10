@@ -1,65 +1,65 @@
 {
     "members": [
       {
-        "name": "Company 1",
-        "address": "123 Main St, City, Country",
+        "name": "Atlas Cartoons",
+        "address": "123 Main St, Kloof",
         "phone": "123-456-7890",
         "website": "#",
-        "image": "company1.jpg",
+        "image": "atlas.webp",
         "membershipLevel": "Gold",
         "otherInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
       },
       {
-        "name": "Company 2",
-        "address": "456 Oak Ave, Town, Country",
+        "name": "CafeCORP",
+        "address": "456 Oak Ave, Kloof",
         "phone": "987-654-3210",
         "website": "#",
-        "image": "company2.jpg",
+        "image": "cafe.webp",
         "membershipLevel": "Silver",
-        "otherInfo": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        "otherInfo": "Sed do eiusmod tempor incididunt ut labore et dolore"
       },
       {
-        "name": "Company 3",
-        "address": "789 Pine Rd, Village, Country",
+        "name": "Deluxe",
+        "address": "789 Pine Rd, Kloof",
         "phone": "555-123-4567",
         "website": "#",
-        "image": "company3.jpg",
+        "image": "deluxe.webp",
         "membershipLevel": "Bronze",
         "otherInfo": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris."
       },
       {
-        "name": "Company 4",
-        "address": "321 Elm Blvd, City, Country",
+        "name": "Groupsy",
+        "address": "321 Elm Blvd, Kloof",
         "phone": "333-555-7777",
         "website": "#",
-        "image": "company4.jpg",
+        "image": "groupsy.webp",
         "membershipLevel": "Platinum",
         "otherInfo": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore."
       },
       {
-        "name": "Company 5",
-        "address": "567 Cedar Ln, Town, Country",
+        "name": "Impower",
+        "address": "567 Cedar Ln, Kloof",
         "phone": "111-222-3333",
         "website": "#",
-        "image": "company5.jpg",
+        "image": "impower.webp",
         "membershipLevel": "Gold",
         "otherInfo": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
       },
       {
-        "name": "Company 6",
-        "address": "890 Maple St, Village, Country",
+        "name": "Motivate",
+        "address": "890 Maple St, Kloof",
         "phone": "777-888-9999",
         "website": "#",
-        "image": "company6.jpg",
+        "image": "motivate.webp",
         "membershipLevel": "Silver",
         "otherInfo": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit."
       },
       {
-        "name": "Company 7",
-        "address": "234 Birch Rd, City, Country",
+        "name": "Up 'n Up",
+        "address": "234 Birch Rd, Kloof",
         "phone": "444-666-2222",
         "website": "#",
-        "image": "company7.jpg",
+        "image": "up.webp",
         "membershipLevel": "Bronze",
         "otherInfo": "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit."
       }

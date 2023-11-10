@@ -20,24 +20,33 @@ function loadMembers(view) {
             memberCard.className = "member-card";
 
             if (view == "grid") {
+                memberCard.className = "member-card grid-view";
                 memberCard.innerHTML = `
-                <img src="images/${member.image}" alt="${member.name}" />
-                <h3>${member.name}</h3>
-                <p>${member.address}</p>
-                <p>${member.phone}</p>
-                <a href="${member.website}" target="_blank">Visit Website</a>
-                <p>Membership Level: ${member.membershipLevel}</p>
-                <p>${member.otherInfo}</p>
-            `;
-        } else if (view === "list") {
-            memberCard.innerHTML = `
-                <h3>${member.name}</h3>
-                <p>${member.address}</p>
-                <p>${member.phone}</p>
-                <a href="${member.website}" target="_blank">Visit Website</a>
-                <p>Membership Level: ${member.membershipLevel}</p>
-                <p>${member.otherInfo}</p>
-            `;
+                    <img src="images/${member.image}" alt="${member.name}" loading="lazy" />
+                    <div class="member-details">
+                        <h3>${member.name}</h3>
+                        <p>${member.address}</p>
+                        <p>${member.phone}</p>
+                        <a href="${member.website}" target="_blank">Visit Website</a>
+                        <p>Membership Level: ${member.membershipLevel}</p>
+                        <p>${member.otherInfo}</p>
+                    </div>
+                `;
+            } else if (view === "list") {
+                memberCard.className = "member-card list-view";
+                memberCard.innerHTML = `
+                    <div class="list-view-content">
+                        <img src="images/${member.image}" alt="${member.name}" loading="lazy" />
+                        <div class="member-details">
+                            <h3>${member.name}</h3>
+                            <p>${member.address}</p>
+                            <p>${member.phone}</p>
+                            <a href="${member.website}">Visit Website</a>
+                            <p>Membership Level: ${member.membershipLevel}</p>
+                            <p>${member.otherInfo}</p>
+                        </div>
+                    </div>
+                `;
             }
 
             membersContainer.appendChild(memberCard);

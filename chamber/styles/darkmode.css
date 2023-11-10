@@ -78,3 +78,12 @@
     background-color: #242424;
     color: white;
 }
+.dark-mode .toggle-buttons button {
+    background-color: #0062cb;
+}
+.dark-mode #membersContainer {
+    background-color:#111111;
+}
+.dark-mode .member-card {
+    background-color: #242424;
+}
