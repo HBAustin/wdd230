@@ -279,3 +279,19 @@ hr {
     border-radius: 10px;
     padding: 10px;
 }
+.member-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.grid-view .member-card {
+    width: 250px;
+    display: inline-block;
+    margin: 10px;
+    vertical-align: top;
+}
+
+.list-view .member-card {
+    width: 98%;
+}

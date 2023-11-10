@@ -202,4 +202,16 @@
         margin-left: 10%;
         margin-right: 10%;
     }
+    .toggle-buttons {
+        margin: 0;
+    }
+    .grid-view .member-card {
+        width: 42%; 
+        margin: 1%; 
+        border-radius: 10px;
+    }
+    .list-view .member-card {
+        width: 94%;
+        border-radius: 10px;
+    }
 }
