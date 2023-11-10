@@ -1,0 +1,68 @@
+{
+    "members": [
+      {
+        "name": "Company 1",
+        "address": "123 Main St, City, Country",
+        "phone": "123-456-7890",
+        "website": "http://www.company1.com",
+        "image": "company1.jpg",
+        "membershipLevel": "Gold",
+        "otherInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      },
+      {
+        "name": "Company 2",
+        "address": "456 Oak Ave, Town, Country",
+        "phone": "987-654-3210",
+        "website": "http://www.company2.com",
+        "image": "company2.jpg",
+        "membershipLevel": "Silver",
+        "otherInfo": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      },
+      {
+        "name": "Company 3",
+        "address": "789 Pine Rd, Village, Country",
+        "phone": "555-123-4567",
+        "website": "http://www.company3.com",
+        "image": "company3.jpg",
+        "membershipLevel": "Bronze",
+        "otherInfo": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris."
+      },
+      {
+        "name": "Company 4",
+        "address": "321 Elm Blvd, City, Country",
+        "phone": "333-555-7777",
+        "website": "http://www.company4.com",
+        "image": "company4.jpg",
+        "membershipLevel": "Platinum",
+        "otherInfo": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore."
+      },
+      {
+        "name": "Company 5",
+        "address": "567 Cedar Ln, Town, Country",
+        "phone": "111-222-3333",
+        "website": "http://www.company5.com",
+        "image": "company5.jpg",
+        "membershipLevel": "Gold",
+        "otherInfo": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      },
+      {
+        "name": "Company 6",
+        "address": "890 Maple St, Village, Country",
+        "phone": "777-888-9999",
+        "website": "http://www.company6.com",
+        "image": "company6.jpg",
+        "membershipLevel": "Silver",
+        "otherInfo": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit."
+      },
+      {
+        "name": "Company 7",
+        "address": "234 Birch Rd, City, Country",
+        "phone": "444-666-2222",
+        "website": "http://www.company7.com",
+        "image": "company7.jpg",
+        "membershipLevel": "Bronze",
+        "otherInfo": "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit."
+      }
+    ]
+  }
+  

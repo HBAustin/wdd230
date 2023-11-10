@@ -37,9 +37,9 @@
         </div>
         <a class="mobile-logo" href="#"><img src="images/favicon.ico" alt="nav Logo"></a>
         <ul class="navigation">
-            <li><a href="#">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="discover.html">Discover</a></li>
-            <li><a href="directory.html">Directory</a></li>
+            <li><a href="#">Directory</a></li>
             <li><a href="join.html">Join</a></li>
         </ul>
         <div class="sacci">
@@ -47,40 +47,11 @@
         </div>
     </nav>
     <main>
-        <div class="placeholders">
-            <div class="hero">
-                <header>
-                    <h1 id="info">Welcome to the South African Chamber of Commerce and Industry website</h1>
-                </header>
-                <picture>
-                    <source media="(min-width: 800px)" srcset="https://wheretostay.co.za/_wts4/resources/0/1/2/01290/120278_xl.jpg">
-                    <source media="(min-width: 200px)" srcset="https://visitdurban.travel/wp-content/uploads/2020/05/kloof.jpg">
-                    <img id="fallback" src="images/hero-medium.webp" alt="hero image">
-                </picture>
-                <a id="join" href="join.html">Join the Chamber</a>
-            </div>
-            <div class="fyi">
-                <div class="smaller">
-                    <h3>Call to action</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in odio convallis, 
-                        ullamcorper dui ac, interdum ex. Vestibulum euismod nunc ante, eget pretium arcu
-                         vestibulum eu. Morbi id mollis leo, rhoncus elementum diam. Phasellus nisl nisi, 
-                         hendrerit ac nisi sed, rutrum vehicula lorem. Vivamus feugiat pellentesque elementum. 
-                         Nullam et augue nec justo tristique fringilla vitae quis nibh. Suspendisse dolor sem, 
-                         rhoncus eget nisi vitae, pharetra auctor dolor. Ut tortor orci, iaculis sed sem et, 
-                         ornare faucibus urna.
-                    </p>
-                </div>
-                <div class="weather">
-                    <p>Weather</p>
-                    <p>Current Temperature: <span id="temperature">40°F</span></p>
-                    <p>Wind Speed: <span id="windspeed">5.0 mph</span></p>
-                    <p>Wind Chill: <span id="windchill">Calculating...</span></p>
-                </div>
-                <div class="current">
-                    <p>Current Events</p>
-                </div>
-            </div>
+        <div class="toggle-buttons">
+            <button onclick="toggleView('grid')">Grid View</button>
+            <button onclick="toggleView('list')">List View</button>
+        </div>
+        <div id="membersContainer" class="grid-view">
         </div>
     </main>
     <footer>
@@ -106,5 +77,6 @@
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/darkmode.js"></script>
     <script src="scripts/windchill.js"></script>
+    <script src="scripts/members.js"></script>
 </body>
 </html>
