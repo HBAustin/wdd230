@@ -1,0 +1,31 @@
+body{
+    background-color: #bfbfbf;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    background-color: #002d5e;
+    color: white;
+    margin: 15px 30% 0;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+    font-family: 'Gabarito', 'Arial';
+}
+main {
+    background-color: white;
+    font-family: 'Poppins', 'Arial';
+    margin: 0 20%;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+footer {
+    position: fixed;
+    width: 100%;
+    color: white;
+    background-color: #002d5e;
+    bottom: 0;
+    text-align: center;
+    font-family: 'Gabarito', 'Poppins', 'Arial';
+}
