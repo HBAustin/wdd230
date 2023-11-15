@@ -7,7 +7,7 @@ body {
     grid-template-columns: 1fr;
 }
 header {
-    background-color: #838383;
+    background-color: #001f41;
     color: white;
     text-align: center;
     padding: 20px 0;
@@ -20,7 +20,8 @@ main {
 }
 #portrait {
     max-width: 250px;
-    border-radius: 8px;
+    border-radius: 250px;
+    border: 5px solid #ffffff;
     margin: 0 auto;
     margin-top: 30px;
 }
@@ -53,8 +54,8 @@ main {
 }
 main h2 {
     text-align: center;
-    background-color: white;
-    color: black;
+    background-color: #002d5e;
+    color: white;
     margin-left: 25%;
     margin-right: 25%;
     padding: 20px;
@@ -160,4 +161,12 @@ iframe {
 }
 #links-container .url {
     text-decoration: none;
+}
+#weather-icon {
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #bfbfbf85;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 10px;
 }
