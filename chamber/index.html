@@ -35,7 +35,6 @@
                 <button id="menu"></button>
                 <button class="dark-mode-button" onClick="toggleDarkMode()">Dark || Light</button>
             </div>
-            <a class="mobile-logo" href="#"><img src="images/favicon.ico" alt="nav Logo"></a>
             <ul class="navigation">
                 <li><a href="#">Home</a></li>
                 <li><a href="discover.html">Discover</a></li>
@@ -45,9 +44,13 @@
         </nav>
     </header>
     <main>
+        <div id="banner" class="banner" >
+            <p>Join us at the Chamber of Commerce meet and greet on Wednesday at 7:00 p.m.!</p>
+            <button id="closeBanner" onclick="closeBanner()">X</button>
         <div id="sacci">
             <img src="images/sacci.webp" alt="sacci logo">
           </div>
+        </div>
         <div class="placeholders">
             <div class="hero">
                 <header>
@@ -59,6 +62,7 @@
                     <img id="fallback" src="images/hero-medium.webp" alt="hero image">
                 </picture>
                 <a id="join" href="join.html">Join the Chamber</a>
+            </div>
             </div>
             <div class="fyi">
                 <div class="smaller">
@@ -77,9 +81,7 @@
                     <p>Current Temperature: <span id="temperature">Loading...</span></p>
                     <p>Weather Description: <span id="weatherDescription">Loading...</span></p>
                     <h4>Three Day Forecast</h4>
-                    <div id="forecast" class="forecast-container">
-                        <!-- Forecast data will be inserted here -->
-                    </div>
+                    <div id="forecast" class="forecast-container"></div>
                 </div>
                 <div class="current">
                     <p>Current Events</p>
@@ -111,5 +113,6 @@
     <script src="scripts/darkmode.js"></script>
     <script src="scripts/windchill.js"></script>
     <script src="scripts/weather.js"></script>
+    <script src="scripts/banner.js"></script>
 </body>
 </html>

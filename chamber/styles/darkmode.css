@@ -87,3 +87,7 @@
 .dark-mode .member-card {
     background-color: #242424;
 }
+.dark-mode #banner p {
+    color: white;
+    background-color: green;
+}

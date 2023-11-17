@@ -1,12 +1,10 @@
 @media (max-width: 500px) {
-    .mobile-logo {
+    #sacci img {
         display: flex;
         position: absolute;
         z-index: 999;
         top: 0;
         left: 0%;
-        padding-top: 15px;
-        padding-left: 15px;
     }
     .navigation {
         z-index: 998;
@@ -218,5 +216,6 @@
     .list-view img {
         width: 100%;
         border-radius: 8px;
+
     }
 }
