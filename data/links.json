@@ -151,7 +151,11 @@
           {
           "url": "lesson10/weather.html",
           "title": "OpenWeatherAPI"
-        }
+          },
+          {
+            "url": "chamber/index.html",
+            "title": "Chamber (week 10)"
+          }
       ]
       }
     ]
