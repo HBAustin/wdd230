@@ -73,9 +73,12 @@
                 </div>
                 <div class="weather">
                     <p>Weather</p>
-                    <p>Current Temperature: <span id="temperature">40°F</span></p>
-                    <p>Wind Speed: <span id="windspeed">5.0 mph</span></p>
-                    <p>Wind Chill: <span id="windchill">Calculating...</span></p>
+                    <p>Current Temperature: <span id="temperature">Loading...</span></p>
+                    <p>Weather Description: <span id="weatherDescription">Loading...</span></p>
+                    <h4>Three Day Forecast</h4>
+                    <div id="forecast" class="forecast-container">
+                        <!-- Forecast data will be inserted here -->
+                    </div>
                 </div>
                 <div class="current">
                     <p>Current Events</p>
@@ -106,5 +109,6 @@
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/darkmode.js"></script>
     <script src="scripts/windchill.js"></script>
+    <script src="scripts/weather.js"></script>
 </body>
 </html>
