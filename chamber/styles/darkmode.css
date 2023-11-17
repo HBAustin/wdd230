@@ -7,10 +7,10 @@
 .dark-mode .navigation a {
     color: white;
 }
-.dark-mode .sacci img {
+.dark-mode #sacci img {
     background-color: white;
-    padding: 10px;
     border-radius: 10px;
+    padding: 10px;
 }
 .dark-mode .hero {
     background-color: #111111;

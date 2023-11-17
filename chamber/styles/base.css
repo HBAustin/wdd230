@@ -22,6 +22,7 @@ main {
     left: 0;
     text-align: left;
     padding: 30px;
+    font-size: 1rem;
 }
 .navigation a {
     text-decoration: none;
@@ -33,18 +34,16 @@ main {
     font-size: 1.5em;
     font-family: "Gabarito", "Ariel";
 }
-.navigation li a:hover {
-    text-decoration: underline;
-}
-.sacci img {
-    z-index : 999;
-    position: absolute; 
+#sacci img {
+    z-index: 999;
+    position: fixed;
     top: 0;
     right: 0;
-    margin-top: 10px;
-    margin-right: 150px;
-    background-color: white;
+    margin: 10px 200px 0 0;
     padding: 10px;
+}
+.navigation li a:hover {
+    text-decoration: underline;
 }
 .hero {
     padding-top: 100px;
@@ -308,7 +307,4 @@ hr {
 .list-view img {
     width: 20%;
     border-radius: 8px;
-}
-.chamber {
-    display: none;
 }
