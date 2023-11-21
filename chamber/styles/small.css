@@ -1,10 +1,11 @@
 @media (max-width: 500px) {
     #sacci img {
-        display: flex;
         position: absolute;
         z-index: 999;
         top: 0;
         left: 0%;
+        margin-top: 5px;
+        margin-left: 5px;
     }
     .navigation {
         z-index: 998;
@@ -51,9 +52,6 @@
         content: 'X';
         font-family: "Gabarito", 'Arial';
         font-weight: lighter;
-    }
-    .sacci {
-        display: none;
     }
     .hero {
         padding-top: 20px;

@@ -141,6 +141,9 @@ header {
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 10px;
 }
+.fyi h3 {
+    text-decoration: underline;
+}
 .smaller {
     margin-left: 20px;
     padding-left: 10px;
@@ -151,8 +154,14 @@ header {
     text-align: center;
     border-radius: 8px;
 }
+.smaller h3 {
+    font-size: 2rem;
+    font-weight: bolder;
+}
 .smaller p {
     text-align: left;
+    font-size: 1.4rem;
+    padding: 30px;
 }
 .weather {
     padding: 10px;
@@ -198,6 +207,11 @@ hr {
 .weather img {
     width: 100px;
 } 
+.current ul li {
+    text-align: left;
+    padding: 10px;
+
+}
 
 /* Discover page */
 
@@ -260,6 +274,7 @@ hr {
     font-family: 'Montserrat', 'Arial';
 }
 .calendar {
+    font-family: 'Gabarito', 'Arial';
     background-color: white;
     border-radius: 20px;
     padding: 20px;
@@ -318,4 +333,70 @@ hr {
     background-color: green;
     color: white;
     font-family: 'Gabarito'
+}
+.joinHeader {
+    margin: 120px 30% 0;
+    text-align: center;
+    background-color: #002d5e;
+    padding: 10px;
+    color: white;
+    border-radius: 20px;
+}
+.thanks {
+    border-radius: 20px;
+    padding: 50px;
+    margin-bottom: 80px;
+}
+
+/* calendar */
+
+.month {
+    font-family: 'Gabarito', 'Arial';
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.month h3 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.days-container {
+    font-family: 'Gabarito', 'Arial';
+    font-size: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    font-weight: bold;
+}
+
+.days {
+    padding: 8px;
+    text-align: center;
+}
+
+.dates-container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+
+.dates {
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.dates:hover {
+    background-color: #002d5e5b;
+}
+
+.current-date {
+    background-color: #002d5e;
+    color: #fff;
+    border-color: white;
+    font-weight: bold;
+}
+.home button {
+    cursor: pointer
 }

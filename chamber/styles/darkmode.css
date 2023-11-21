@@ -75,7 +75,6 @@
     background-color:#0062cb; 
 }
 .dark-mode main h3,.dark-mode main p {
-    background-color: #242424;
     color: white;
 }
 .dark-mode .toggle-buttons button {
@@ -90,4 +89,22 @@
 .dark-mode #banner p {
     color: white;
     background-color: green;
+}
+.dark-mode .thanks {
+    background-color: #242424;
+}
+.dark-mode .calendar {
+    background-color: #111111;
+    color: white;
+}
+.dark-mode .dates {
+    background-color: #414141;
+    color: white;
+    border: solid 1px #414141;
+}
+.dark-mode .current-date {
+    background-color: #0062cb;
+}
+.dar-mode .current-date:hover {
+    background-color: #0062cb5d
 }

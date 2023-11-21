@@ -20,7 +20,7 @@
         font-size: 1.7rem;
     }
     #sacci img {
-        width: 200px;
+        width: 50px;
         margin-top: 20px;
     }
     #banner {
@@ -47,5 +47,59 @@
         padding: 50px;
         width: 400px;
         font-size: 2rem;
+    }
+    .fyi p {
+        font-size: 1.5rem
+    }
+    .smaller p {
+        font-size: 2rem;
+    }
+
+    /* join page */
+
+    .joinHeader {
+        background-color: #002d5e;
+        color: white;
+        padding: 10px;
+        border-radius: 20px;
+        margin: 150px 25% 0;
+        font-size: 3rem;
+        text-align: center;
+    }
+    label {
+        font-size: 1.5rem;
+    }
+    .button {
+        width: 50%;
+        margin-left: 25%;
+        font-size: 1.4rem;
+    }
+    .thanks {
+        background-color: white;
+        font-size: 3rem;
+        padding: 80px;
+        border-radius: 20px;
+        margin-bottom: 100px;
+    }
+    .home {
+        font-size: 8rem;
+    }
+
+    /* Discover */
+
+    .discover {
+        margin-top: 50px;
+    }
+    .sidebar h1{
+        font-size: 3rem;
+    }
+    .sidebar p {
+        font-size: 2.5rem;
+    }
+    .sidebar2 h1{
+        font-size: 3rem;
+    }
+    .sidebar2 p {
+        font-size: 2.5rem;
     }
 }
