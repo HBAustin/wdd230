@@ -116,11 +116,11 @@ main p {
         font-size: 2rem; 
     }
     .joinHeader {
-        font-size: 5rem;
+        font-size: 3rem;
     }
     .thanks {
         border-radius: 70px;
-        font-size: 5rem;
+        font-size: 3rem;
         margin: 50px 10%;
     }
 }
