@@ -218,4 +218,7 @@
         border-radius: 8px;
 
     }
+    #banner {
+        margin: 0;
+    }
 }
