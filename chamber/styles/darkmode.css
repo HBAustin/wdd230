@@ -105,6 +105,9 @@
 .dark-mode .current-date {
     background-color: #0062cb;
 }
-.dar-mode .current-date:hover {
-    background-color: #0062cb5d
+.dark-mode main {
+    background-color: black;
+}
+.dark-mode body {
+    background-color: #111111;
 }

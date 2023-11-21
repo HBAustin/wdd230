@@ -7,6 +7,12 @@
         margin-top: 5px;
         margin-left: 5px;
     }
+    body {
+        background-color: white;
+    }
+    main {
+        background-color: #bfbfbf;
+    }
     .navigation {
         z-index: 998;
         width: 85%;
@@ -176,7 +182,7 @@
     .discover {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(4, auto)
+        grid-template-rows: repeat(4, auto);
     }
     .sidebar {
         grid-column: 1;
@@ -219,4 +225,13 @@
     #banner {
         margin: 0;
     }
+    .calendar {
+        overflow-x: auto;
+        max-width: 100%;
+        padding: 10px;
+    }
+    .days-container {
+        font-size: 1rem;
+    }
+    
 }
