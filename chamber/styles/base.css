@@ -270,8 +270,9 @@ hr {
     border-radius: 20px;
 }
 .sidebar2 p {
+    text-align: left;
     font-size: 1.5rem;
-    font-family: 'Montserrat', 'Arial';
+    font-family: 'Gabarito', 'Arial';
 }
 .calendar {
     font-family: 'Gabarito', 'Arial';
@@ -279,6 +280,9 @@ hr {
     border-radius: 20px;
     padding: 20px;
     text-align: center;
+}
+.sidebar2 li {
+    text-align: left;
 }
 
 /* Directory */
