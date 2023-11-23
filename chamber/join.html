@@ -30,24 +30,32 @@
 
 </head>
 <body>
-    <nav>
-        <div class="mobile-controls">
-            <button id="menu"></button>
-            <button class="dark-mode-button" onClick="toggleDarkMode()">Dark || Light</button>
-        </div>
-        <a class="mobile-logo" href="#"><img src="images/favicon.ico" alt="nav Logo"></a>
-        <ul class="navigation">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="discover.html">Discover</a></li>
-            <li><a href="directory.html">Directory</a></li>
-            <li><a href="#">Join</a></li>
-        </ul>
+    <header>
+        <nav>
+            <div class="mobile-controls">
+                <button id="menu"></button>
+                <label class="switch">
+                    <input type="checkbox" id="darkModeToggle">
+                    <span class="slider round">
+                    </span>
+                </label>
+            </div>
+            <ul class="navigation">
+                <a href="index.html"><li class="home">Home</li></a>
+                <hr>
+                <a href="discover.html"><li>Discover</li></a>
+                <hr>
+                <a href="directory.html"><li>Directory</li></a>
+                <hr>
+                <a href="join.html"><li>Join</li></a>
+            </ul>
+        </nav>
+    </header>
+    <h1 class="joinHeader">Join Our Chamber</h1>
+    <main>
         <div id="sacci">
             <a href="index.html"><img src="images/favicon.ico" alt="sacci logo"></a>
         </div>
-    </nav>
-    <h1 class="joinHeader">Join Our Chamber</h1>
-    <main>
         <form action="thankyou.html" method="get">
             <label class="top" for="first-name">* Applicant's First Name:</label>
             <input type="text" id="first-name" name="first-name" placeholder="John" required>

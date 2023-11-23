@@ -33,13 +33,20 @@
         <nav>
             <div class="mobile-controls">
                 <button id="menu"></button>
-                <button class="dark-mode-button" onClick="toggleDarkMode()">Dark || Light</button>
+                <label class="switch">
+                    <input type="checkbox" id="darkModeToggle">
+                    <span class="slider round">
+                    </span>
+                </label>
             </div>
             <ul class="navigation">
-                <li><a href="#">Home</a></li>
-                <li><a href="discover.html">Discover</a></li>
-                <li><a href="directory.html">Directory</a></li>
-                <li><a href="join.html">Join</a></li>
+                <a href="index.html"><li class="home">Home</li></a>
+                <hr>
+                <a href="discover.html"><li>Discover</li></a>
+                <hr>
+                <a href="directory.html"><li>Directory</li></a>
+                <hr>
+                <a href="join.html"><li>Join</li></a>
             </ul>
         </nav>
     </header>
@@ -54,7 +61,8 @@
         <div class="placeholders">
             <div class="hero">
                 <header>
-                    <h1 id="info">Welcome to the South African Chamber of Commerce and Industry website</h1>
+                    <h1 class="welcome">Welcome to the</h1>
+                    <h1 id="info">South African Chamber of Commerce and Industry</h1>
                 </header>
                 <picture>
                     <source media="(min-width: 800px)" srcset="https://wheretostay.co.za/_wts4/resources/0/1/2/01290/120278_xl.jpg">
@@ -92,7 +100,6 @@
                     </ul>
                 </div>
             </div>
-        </div>
     </main>
     <footer>
         <section class="bottom-nav">
@@ -116,7 +123,6 @@
     <script src="scripts/getdates.js"></script>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/darkmode.js"></script>
-    <script src="scripts/windchill.js"></script>
     <script src="scripts/weather.js"></script>
     <script src="scripts/banner.js"></script>
 </body>

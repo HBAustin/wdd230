@@ -31,23 +31,31 @@
 </head>
 <header></header>
 <body>
-    <nav>
-        <div class="mobile-controls">
-            <button id="menu"></button>
-            <button class="dark-mode-button" onClick="toggleDarkMode()">Dark || Light</button>
-        </div>
-        <a class="mobile-logo" href="#"><img src="images/favicon.ico" alt="nav Logo"></a>
-        <ul class="navigation">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="discover.html">Discover</a></li>
-            <li><a href="directory.html">Directory</a></li>
-            <li><a href="join.html">Join</a></li>
-        </ul>
+    <header>
+        <nav>
+            <div class="mobile-controls">
+                <button id="menu"></button>
+                <label class="switch">
+                    <input type="checkbox" id="darkModeToggle">
+                    <span class="slider round">
+                    </span>
+                </label>
+            </div>
+            <ul class="navigation">
+                <a href="index.html"><li class="home">Home</li></a>
+                <hr>
+                <a href="discover.html"><li>Discover</li></a>
+                <hr>
+                <a href="directory.html"><li>Directory</li></a>
+                <hr>
+                <a href="join.html"><li>Join</li></a>
+            </ul>
+        </nav>
+    </header>
+    <main>
         <div id="sacci">
             <a href="index.html"><img src="images/favicon.ico" alt="sacci logo"></a>
         </div>
-    </nav>
-    <main>
         <h1 class="joinHeader">Join Our Chamber</h1>
         <h3 class="thanks"> Thank you for your interest in joining our chamber! We will get back to you As soon as possible</h3>
         <div class="home">

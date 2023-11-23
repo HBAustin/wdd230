@@ -36,16 +36,6 @@
     .navigation li a:hover {
         text-decoration: underline;
     }
-    .sacci img {
-        z-index : 999;
-        position: absolute; 
-        top: 0;
-        right: 0;
-        margin-top: 10px;
-        margin-right: 150px;
-        background-color: white;
-        padding: 10px;
-    }
     .hero {
         padding-top: 100px;
     }
@@ -117,19 +107,6 @@
     .mobile-controls {
         display: flex;
         align-items: center;
-    }
-    .dark-mode-button {
-        z-index: 999;
-        position: fixed;
-        font-family: 'Gabarito', 'Arial';
-        top: 0;
-        right: 0;
-        margin-top: 20px;
-        margin-right: 20px;
-        padding: 10px;
-        background-color: #002d5e;
-        color: white;
-        border-radius: 8px;
     }
     .fyi {
         font-family: 'Montserrat', 'Arial';

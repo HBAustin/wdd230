@@ -1,27 +1,30 @@
-@media (min-width: 1500px) {
+@media (min-width: 2000px) {
+    .hero .welcome {
+        margin-top: 80px;
+    }
     .hero h1{
-        margin: 50px;
-        font-size: 4rem;
+        margin: 0px 80px 0 80px;
+        font-size: 6rem;
     }
     .navigation a {
         text-decoration: none;
         color: #002d5e;
-        font-size: 3rem;
+        font-size: 2rem;
     }
     .navigation li {
         display: inline;
         padding: 30px;
-        font-size: 1.5em;
+        font-size: 1.5rem;
         font-family: "Gabarito", "Ariel";
     }
     .dark-mode-button {
-        width: 170px;
+        margin-top: 15px;
         height: 70px;
-        font-size: 1.7rem;
     }
     #sacci img {
         width: 50px;
-        margin-top: 20px;
+        margin-top: 15px;
+        margin-right: 130px;
     }
     #banner {
         margin-top: 60px;
@@ -101,5 +104,55 @@
     }
     .sidebar2 p {
         font-size: 2.5rem;
+    }
+
+    /* dark mode toggle */
+
+    .switch {
+        position: fixed;
+        display: inline-block;
+        width: 100px;
+        height: 60px;
+        z-index: 999;
+        top: 0;
+        right: 0;
+        margin: 15px 20px;
+    }
+    .slider:before {
+        line-height: 55px;
+        font-size: 2rem;
+        position: absolute;
+        content: "☀️";
+        height: 52px;
+        width: 52px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        border-radius: 50%;
+        transition: .2s
+    }
+    input:checked + .slider:before {
+        background-color: black;
+        content: "✨"; 
+    }
+    
+    input:checked + .slider {
+        background-color: #2196F3;
+    }
+    
+    input:focus + .slider {
+        box-shadow: 0 0 1px #2196F3;
+    }
+    
+    input:checked + .slider:before {
+        transform: translateX(40px);
+    }
+    
+    .slider.round {
+        border-radius: 34px;
+    }
+    
+    .slider.round:before {
+        border-radius: 50%;
     }
 }

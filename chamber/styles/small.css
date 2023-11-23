@@ -3,14 +3,15 @@
         position: absolute;
         z-index: 999;
         top: 0;
-        left: 0%;
-        margin-top: 5px;
-        margin-left: 5px;
+        left: 0;
+        margin: 13px 0 0 15px;
+        width: 45px;
     }
     body {
         background-color: white;
     }
     main {
+        padding: 2px 0 0 0;
         background-color: #bfbfbf;
     }
     .navigation {
@@ -19,15 +20,34 @@
         padding-bottom: 50px;
         position: absolute;
     }
+    .home {
+        margin-top: 70px;
+    }
     .navigation a {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
     .navigation li {
+        font-size: 1.5rem;
         display: none;
         z-index: 999;
     }
+    .navigation hr {
+        display: none; /* Hide <hr> lines by default */
+    }
+    
+    .show hr {
+        display: inline-block; 
+        width: 100%;
+    }
     #info {
         z-index: 1;
+    }
+    #menu button {
+        z-index: 999;
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: block;
     }
     #menu {
         display:block;
@@ -36,7 +56,7 @@
         position: absolute;
         top: 0;
         right: 0;
-        border-radius: 8px;;
+        border-radius: 25px;
         margin-top: 10px;
         margin-right: 7px;
         width: 90px;
@@ -51,8 +71,8 @@
     .show li {
         z-index: 999;
         display: block;
-        text-align: left;
-        padding-top: 50px;
+        text-align: right;
+        padding: 30px;
     }
     #menu.show::before {
         content: 'X';
@@ -60,18 +80,13 @@
         font-weight: lighter;
     }
     .hero {
-        padding-top: 20px;
+        padding-top: 1%;
         padding-bottom: 5%;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto 1fr;
     }
-    picture {
-        grid-column: 1/ span 2;
-        grid-row: 1;
-        position: relative;
-        padding-bottom: 5%;
-    }
+    picture,
     #fallback {
         grid-column: 1/ span 2;
         grid-row: 1;
@@ -118,24 +133,10 @@
         display: flex;
         align-items: center;
     }
-    .dark-mode-button {
-        z-index: 999;
-        position: absolute;
-        font-family: 'Gabarito', 'Arial';
-        top: 0;
-        right: 0;
-        margin-top: 10px;
-        margin-right: 100px;
-        width: 90px;
-        height: 60px;
-        background-color: #002d5e;
-        color: white;
-        border-radius: 8px;
-    }
     .fyi {
         font-family: 'Montserrat', 'Arial';
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: repeat(4, 1fr);
         grid-template-rows: 1fr 0.5fr;
         padding-left: 20px;
     }
@@ -160,15 +161,13 @@
         grid-row: 2;
         height: 100%;
     }
-    .footer-content{
+    .footer-content {
         padding-left: 50px;
     }
     .footer-logo {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
-    }
-    .footer-logo {
         grid-column: 1;
         grid-row: 1;
     }
@@ -178,7 +177,6 @@
     } 
 
     /* Discover Page */
-
     .discover {
         display: grid;
         grid-template-columns: 1fr;
@@ -220,7 +218,6 @@
     .list-view img {
         width: 100%;
         border-radius: 8px;
-
     }
     #banner {
         margin: 0;
@@ -233,5 +230,73 @@
     .days-container {
         font-size: 1rem;
     }
+    /* Dark mode switch */
+
+    .switch {
+        position: absolute;
+        display: inline-block;
+        width: 90px;
+        height: 60px;
+        z-index: 999;
+        top: 0;
+        right: 0;
+        margin: 10px 100px;
+    }
     
-}
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        border-radius: 34px;
+    }
+    
+    .slider:before {
+        position: absolute;
+        content: "☀️";
+        color: black;
+        font-size: 2.5rem;
+        height: 52px;
+        width: 50px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        border-radius: 50%;
+        line-height: 55px;
+        text-align: center;
+        transition: .2s;
+    }
+    
+    input:checked + .slider:before {
+        background-color: black;
+        color: white;
+        content: "✨"; 
+        height: 52px;
+        width: 50px;
+        line-height: 55px;
+        text-align: center;
+    }
+    
+    input:checked + .slider {
+        background-color: #2196F3;
+    }
+    
+    input:focus + .slider {
+        box-shadow: 0 0 1px #2196F3;
+    }
+    
+    input:checked + .slider:before {
+        transform: translateX(32px);
+    }
+    
+    .slider.round {
+        border-radius: 25px;
+    }
+    
+    .slider.round:before {
+        border-radius: 20px;
+    }    
+}    
