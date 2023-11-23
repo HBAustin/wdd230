@@ -80,18 +80,31 @@
         font-weight: lighter;
     }
     .hero {
-        padding-top: 1%;
-        padding-bottom: 5%;
+        position: relative;
+        text-align: center;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto 1fr;
+        grid-template-rows: auto auto;
+        padding-bottom: 20px;
+    }
+    .hero h2 {
+        grid-row: 1;
+        grid-column: 1/span 2;
+        z-index: 2;
+        color: white;
+    }
+    .hero h1 {
+        grid-row: 2;
+    }
+    .hero .fill {
+        display: none;
     }
     picture,
     #fallback {
         grid-column: 1/ span 2;
         grid-row: 1;
         position: relative;
-        padding-bottom: 5%;
+        padding-bottom: 10px;
     }
     header {
         margin-top: 20%;
@@ -207,9 +220,8 @@
         margin-top: 50px;
     }
     .grid-view .member-card {
-        width: 42%; 
-        margin: 1%; 
-        border-radius: 10px;
+        margin: 0;
+        width: 44%;
     }
     .list-view .member-card {
         width: 94%;
@@ -217,7 +229,7 @@
     }
     .list-view img {
         width: 100%;
-        border-radius: 8px;
+        border-radius: 20px;
     }
     #banner {
         margin: 0;
@@ -299,4 +311,4 @@
     .slider.round:before {
         border-radius: 20px;
     }    
-}    
+} 

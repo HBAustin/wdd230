@@ -286,6 +286,10 @@ hr {
     font-size: 1.2rem;
     font-family: 'Gabarito', 'Arial';
     border-radius: 10px;
+    border: none;
+}
+.toggle-buttons button:active {
+    background-color: #011a36;
 }
 #membersContainer {
     background-color: white;
@@ -297,12 +301,11 @@ hr {
 .member-card {
     border: 1px solid #ccc;
     padding: 10px;
-    margin-bottom: 10px;
 }
 .grid-view .member-card {
     border-radius: 8px;
-    width: 250px;
-    height: 450px;
+    width: 29.9%;
+    height: 500px;
     display: inline-block;
     margin: 10px;
     vertical-align: top;

@@ -1,10 +1,14 @@
-@media (min-width: 2000px) {
+@media (min-width: 1500px) {
     .hero .welcome {
         margin-top: 80px;
+        font-size: 3rem;
     }
-    .hero h1{
-        margin: 0px 80px 0 80px;
-        font-size: 6rem;
+    picture {
+        background-color: red;
+    }
+    .hero h1 {
+        font-size: 4rem;
+        margin: 100px 100px 50px 100px;
     }
     .navigation a {
         text-decoration: none;
@@ -104,6 +108,23 @@
     }
     .sidebar2 p {
         font-size: 2.5rem;
+    }
+    #membersContainer {
+        width: 60%;
+        margin-left: 20%;
+    }
+    .grid-view .member-card {
+        border-radius: 8px;
+        width: 100%; 
+        max-width: 31.09%; 
+        height: 450px;
+        display: inline-block;
+        margin: 10px;
+        vertical-align: top;
+        overflow: auto; 
+    }
+    .list-view .member-card {
+        width: 50%;
     }
 
     /* dark mode toggle */
