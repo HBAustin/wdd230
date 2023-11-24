@@ -27,9 +27,12 @@
         margin-top: 70px;
     }
     .navigation a {
+        display: block;
         font-size: 2rem;
+        width: 100%;
     }
     .navigation li {
+        border-bottom: 1px solid black;
         font-size: 1.5rem;
         display: none;
         z-index: 999;

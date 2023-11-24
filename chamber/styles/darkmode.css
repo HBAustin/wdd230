@@ -131,3 +131,8 @@
 .dark-mode .joinHeader {
     background-color: #0062cb
 }
+@media (max-width: 500px) {
+    .dark-mode .navigation li {
+        border-bottom: 1px solid white;
+    }
+}
