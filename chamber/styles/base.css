@@ -1,9 +1,7 @@
 body {
     background-color: #BFBFBF;
     display: none;
-}
-main {
-    padding-top: 50px;
+    margin-top: 35px;
 }
 .mobile-logo {
     display: none;
@@ -33,6 +31,9 @@ main {
     padding: 30px;
     font-size: 1.5em;
     font-family: "Gabarito", "Ariel";
+}
+.content {
+    margin-bottom: 35px;
 }
 #sacci img {
     z-index: 999;
@@ -66,19 +67,14 @@ footer {
     margin-bottom: 10px;
 }
 .hero {
-    margin-top: 4%;
+    background-color: white;
     margin-right: 1%;
     margin-left: 1%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto 1fr;
-    background-color: white;
-    border-radius: 8px;
-    padding-top: 0;
-
 }
 picture {
-    border-radius: 8px;
     width: 100%;
     height: auto;
     grid-column: 3/ span 4;
@@ -86,9 +82,8 @@ picture {
 
 }
 #fallback {
-    border-radius: 8px;
+    border-radius: 20px;
     width: 100%;
-    height: auto;
     grid-column: 3/ span 4;
     grid-row: 1/ span 2;
 }
@@ -101,7 +96,7 @@ header {
 }
 #join {
     text-decoration: none;
-    border-radius: 15px;
+    border-radius: 20px;
     font-size: 30px;
     grid-column: 1 / span 2;
     grid-row: 2;
@@ -139,7 +134,7 @@ header {
     grid-row: 1/ span 2;
     background-color: white;
     text-align: center;
-    border-radius: 8px;
+    border-radius: 20px;
     
 }
 .smaller h3 {
@@ -151,7 +146,7 @@ header {
     font-size: 1.4rem;
     padding: 30px;
     background-color: #e7e7e7;
-    border-radius: 8px;
+    border-radius: 20px;
     transition: all .2s ease-in-out
 }
 .smaller p:hover {
@@ -334,7 +329,7 @@ hr {
 .grid-view .member-card {
     border-radius: 8px;
     width: 29.9%;
-    height: 500px;
+    height: 550px;
     display: inline-block;
     margin: 10px;
     vertical-align: top;

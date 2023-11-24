@@ -14,6 +14,9 @@
         padding: 2px 0 0 0;
         background-color: #bfbfbf;
     }
+    .content {
+        margin: 30px 5px;
+    }
     .navigation {
         z-index: 998;
         width: 85%;
@@ -32,7 +35,7 @@
         z-index: 999;
     }
     .navigation hr {
-        display: none; /* Hide <hr> lines by default */
+        display: none; 
     }
     
     .show hr {
@@ -86,6 +89,8 @@
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto auto;
         padding-bottom: 20px;
+        background-color: white;
+        border-radius: 8px;
     }
     .hero h2 {
         grid-row: 1;
@@ -193,16 +198,30 @@
     .discover {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(4, auto);
+        grid-template-rows: repeat(5, auto);
     }
     .sidebar {
         grid-column: 1;
         grid-row: 1;
     }
+    .history {
+        grid-column: 1;
+        grid-row: 3;
+    }
+    .calendar {
+        grid-row: 4;
+        overflow-x: auto;
+        max-width: 100%;
+        padding: 10px;
+    }
+    .days-container {
+        font-size: 1rem;
+    }
     .rightbar {
         grid-column: 1; 
-        grid-row: 4;
+        grid-row: 5;
         display: grid;
+        margin-bottom: 20px;
     }
     .rightbar img {
         grid-column: 1/ span 2;
@@ -210,6 +229,9 @@
     .rightbar img:hover {
         transform: none;
     }
+
+    /* Directory */
+
     .joinHeader {
         font-size: 1.5rem;
         margin-left: 10%;
@@ -234,14 +256,7 @@
     #banner {
         margin: 0;
     }
-    .calendar {
-        overflow-x: auto;
-        max-width: 100%;
-        padding: 10px;
-    }
-    .days-container {
-        font-size: 1rem;
-    }
+
     /* Dark mode switch */
 
     .switch {
