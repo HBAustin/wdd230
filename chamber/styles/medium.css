@@ -1,9 +1,10 @@
-@media (min-width: 1000px) {    
+@media (min-width: 900px) {    
     .heroImg {
         border-radius: 20px;
     }
     .hero {
         border-radius: 20px;
+        margin-top: 90px;
     }
     .smaller {
         border-radius: 20px;
