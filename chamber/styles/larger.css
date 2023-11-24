@@ -1,7 +1,8 @@
-@media (min-width: 2000px) {
+@media (min-width: 1500px) {
     .hero .welcome {
         margin-top: 80px;
         font-size: 3rem;
+
     }
     .content {
         margin-top: 100px;
