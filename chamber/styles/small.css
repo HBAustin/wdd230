@@ -12,7 +12,7 @@
     }
     main {
         padding: 2px 0 0 0;
-        background-color: #bfbfbf;
+        background-color: #bfbfbf;;
     }
     .content {
         margin: 30px 5px;
@@ -90,7 +90,7 @@
         grid-template-rows: auto auto;
         padding-bottom: 20px;
         background-color: white;
-        border-radius: 8px;
+        border-radius: 20px;
     }
     .hero h2 {
         grid-row: 1;
@@ -135,7 +135,7 @@
         background-color: white;
         text-align: center;
         margin: 10px;
-        border-radius: 12px;
+        border-radius: 20px;
         font-family: 'Montserrat', 'Arial';
     }
     .smaller h3 {
@@ -164,7 +164,7 @@
         grid-row: 1;
         background-color: white;
         text-align: center;
-        border-radius: 8px;
+        border-radius: 20px;
     }
     .smaller p {
         text-align: center;
@@ -173,11 +173,13 @@
         grid-column: 1/ span 2;
         grid-row: 2;
         margin: 0;
+        border-radius: 20px;
     }
     .current {
         grid-column: 3/ span 4;
         grid-row: 2;
         height: 100%;
+        border-radius: 20px;
     }
     .footer-content {
         padding-left: 50px;

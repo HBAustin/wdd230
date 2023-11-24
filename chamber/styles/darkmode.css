@@ -37,14 +37,18 @@
     background-color: white;
 }
 .dark-mode .weather {
-    text-decoration: underline;
-    background-color: #111111;
     color: white;
+    background-color: #111111;
+}
+.dark-mode .weather h2 {
+    text-decoration: underline;
 }
 .dark-mode .current {
-    text-decoration: underline;
-    background-color: #111111;
     color: white;
+    background-color: #111111;
+}
+.dark-mode .current h2{
+    text-decoration: underline;
 }
 .dark-mode #menu {
     background-color: white;
