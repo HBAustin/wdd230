@@ -304,6 +304,7 @@ hr {
     text-align: center;
 }
 .toggle-buttons button {
+    cursor: pointer;
     color: white;
     background-color: #002d5e;
     padding: 20px;
