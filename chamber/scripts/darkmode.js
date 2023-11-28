@@ -12,6 +12,10 @@ function toggleDarkMode() {
     darkElements.forEach(function(element) {
         element.classList.toggle("dark-mode", isDarkMode);
     });
+
+    // Apply rotation to the button based on the dark mode state
+    var darkModeButton = document.querySelector('.gg-dark-mode');
+    darkModeButton.style.transform = isDarkMode ? 'rotate(180deg)' : 'rotate(0)';
 }
 
 function applyDarkModeStyles() {
@@ -27,6 +31,10 @@ function applyDarkModeStyles() {
     });
 
     body.style.display = "block";
+
+    // Set initial rotation based on preferred dark mode setting
+    var darkModeButton = document.querySelector('.gg-dark-mode');
+    darkModeButton.style.transform = isDarkModePreferred ? 'rotate(180deg)' : 'rotate(0)';
 }
 
 document.addEventListener("DOMContentLoaded", applyDarkModeStyles);

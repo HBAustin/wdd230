@@ -267,71 +267,45 @@
 
     /* Dark mode switch */
 
-    .switch {
-        position: absolute;
-        display: inline-block;
-        width: 90px;
-        height: 60px;
+    .gg-dark-mode {
         z-index: 999;
-        top: 0;
-        right: 0;
-        margin: 10px 100px;
-    }
-    
-    .slider {
-        position: absolute;
+        position: fixed;
         cursor: pointer;
-        top: 0;
-        left: 0;
         right: 0;
-        bottom: 0;
-        background-color: #ccc;
-        border-radius: 34px;
+        top: 0;
+        margin-top: 15px;
+        margin-right: 110px;
+        box-sizing: border-box;
+        border:3px solid black;
+        border-radius:100px;
+        width:50px;
+        height:50px
     }
-    
-    .slider:before {
+    .gg-dark-mode::after,
+    .gg-dark-mode::before {
+        content: "";
+        box-sizing: border-box;
         position: absolute;
-        content: "☀️";
-        color: black;
-        font-size: 2.5rem;
-        height: 52px;
-        width: 50px;
-        left: 4px;
-        bottom: 4px;
-        background-color: white;
-        border-radius: 50%;
-        line-height: 55px;
-        text-align: center;
-        transition: .2s;
+        display: block
     }
-    
-    input:checked + .slider:before {
-        background-color: black;
-        color: white;
-        content: "✨"; 
-        height: 52px;
-        width: 50px;
-        line-height: 55px;
-        text-align: center;
+    .gg-dark-mode::before {
+        border: 14px solid black;
+        border-top-left-radius:100px;
+        border-bottom-left-radius:100px;
+        border-right: 0;
+        width:25px;
+        height:50px;
+        top: -3px;
+        left:-3px
     }
-    
-    input:checked + .slider {
-        background-color: #2196F3;
-    }
-    
-    input:focus + .slider {
-        box-shadow: 0 0 1px #2196F3;
-    }
-    
-    input:checked + .slider:before {
-        transform: translateX(32px);
-    }
-    
-    .slider.round {
-        border-radius: 25px;
-    }
-    
-    .slider.round:before {
-        border-radius: 20px;
-    }  
+    .gg-dark-mode::after {
+        border: 11px solid black;
+        border-top-right-radius:100px;
+        border-bottom-right-radius:100px;
+        border-left: 0;
+        width:12px;
+        height:22px;
+        right:10px;
+        top:11px
+    } 
 } 
