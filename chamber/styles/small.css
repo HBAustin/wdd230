@@ -269,7 +269,7 @@
 
     .gg-dark-mode {
         z-index: 999;
-        position: fixed;
+        position: absolute;
         cursor: pointer;
         right: 0;
         top: 0;
