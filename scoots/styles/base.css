@@ -1,0 +1,76 @@
+body,
+ul {
+    margin: 0;
+    padding: 0;
+}
+.nav {
+    list-style-type: none;
+    display: flex;
+    background-color: #D4002A;
+    justify-content: left;
+    padding: 15px 0;
+    margin-bottom: 0;
+}
+.nav li {
+    font-size: 1.5rem;
+    margin-right: 70px;
+    font-family: 'Poppins', 'Arial';
+}
+.nav li:last-child {
+    margin-right: 0;
+}
+.nav li:first-child {
+    margin-left: 30px;
+}
+.nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: all .1s ease-in-out;
+}
+
+/* Main */
+
+.hero {
+    position: relative;
+    text-align: center;
+    font-family: 'Poppins', 'Arial';
+    font-size: 2rem;
+    background-image: url("../images/road.jpg"); opacity: 0.9;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+}
+.heroText h1 {
+    font-family: 'Gabarito', 'Poppins', 'Arial';
+    font-size: 4rem;
+    position: absolute;
+    top: 15%;
+    transform: translateY(-50%);
+    margin: 0;
+    color: black;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.heroText button {
+    opacity: 2;
+    position: absolute;
+    width: 30%;
+    top: 50%;
+    left: 35%;
+    height: 50px;
+    font-size: 2rem;
+    border: none;
+    font-family: 'Gabarito';
+    border-radius: 20px;
+    background-color: #D4002A;
+    color: white;
+    cursor: pointer;
+}
+.heroText img {
+    position: absolute;
+    top: 25%;
+    border-radius: 20px;
+    width: 20%;
+    left: 40%;
+}
