@@ -20,10 +20,15 @@
     }
     .nav.show {
         opacity: 1;
-        transform: translateY(0);
+        transform: translateX(0);
     }
     .nav a{
         font-size: 2rem;
+        text-align: right;
+        background-color: #c40128;
+        padding: 10px;
+        width: 100%;
+        border-radius: 20px;;
     }
     .nav li {
         display: none;
@@ -71,7 +76,6 @@
         text-align: right;
         margin: 0;
         padding-top: 40px;
-        border-bottom: solid 0.5px black;
     }
     
     /* main */
@@ -89,10 +93,66 @@
         top: 25%;
         border: solid 2px red;
     }
-    .heroText a {
+    .heroText button {
         width: 80%;
         margin: 0 10%;
     }
+
+    /* Rental Table */
+
+    #scroll {
+        display: block;
+        position: relative;
+        text-align: center;
+        margin: 0 10% 30px;
+        font-size: 1.5rem;
+        padding: 10px;
+        background-color: #D4002A;
+        color: white;
+        font-family: 'Gabarito', 'Arial';
+        border-radius: 10px;
+    }
+    .rental {
+        margin: 0 5%;
+        padding: 10px;
+        border-radius: 10px;
+        overflow-x: auto;
+      }
+    
+      .rental table {
+        width: auto;
+        border-collapse: collapse;
+        margin-bottom: 10px;
+        overflow: auto;
+      }
+    
+      .rental td {
+        font-family: 'Poppins', 'Arial';
+        text-align: center; 
+        border-bottom: 1px solid #ddd;
+        border-right: solid 1px;
+        padding: 5px;
+        white-space: nowrap;
+      }
+    
+      .rental th {
+        font-family: 'Gabarito', 'Arial';
+        font-weight: 600;
+        border-bottom: solid 2px;
+        padding: 8px;
+      }
+      .reserveButton {
+        display: block;
+        text-align: center;
+        padding: 20px;
+        margin: 30px 20%;
+        border-radius: 10px;
+        background-color: red;
+        color: white;
+        font-family: 'Gabarito', 'Arial';
+        font-size: 1.5rem;
+        text-decoration: none;
+      }
     
     /* Summary */
 

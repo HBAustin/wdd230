@@ -16,7 +16,7 @@
     <title>Scoots</title>
 </head>
 <body>
-    
+
     <header>
         <nav>
             <div class="mobile-controls">
@@ -37,7 +37,7 @@
         <section class="heroText">
             <h2>Welcome to</h2>
             <img src="images/scoots-alt.png" alt="scoots logo">
-            <a href="#">Make a Reservation</a>
+            <button onclick="scrollToSection('rental')">Rental Info</button>
         </section>
 
         <div class="call">
@@ -48,8 +48,27 @@
             </h3>
         </div>
 
+        
+        <section class="rental">
+            <div id="scroll">Scroll for More! →</div>
+            <table id="rentalTable">
+              <thead>
+                <tr>
+                  <th>Type</th>
+                  <th>Max</th>
+                  <th>Half Day (Reserve)</th>
+                  <th>Full Day (Reserve)</th>
+                  <th>Half Day (Walk-in)</th>
+                  <th>Full Day (Walk-in)</th>
+                </tr>
+              </thead>
+              <tbody id="rentalTableBody"></tbody>
+            </table>
+          </section>
+
+          <a class="reserveButton" href="reserve.html">Reserve now!</a>
+
         <div class="summary">
-            <p>rental information placeholder</p>
             <div class="social">
                 <p>Check out our Social Media Pages!</p>
                 <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.png" alt="facebook-logo"></a>
@@ -67,12 +86,9 @@
             </div>
             <div id="forecast">
                 <h3>One Day Forecast</h3>
-                <!-- Forecast details will be populated here -->
+                <!-- Forecast Here -->
             </div>
-            <div id="alerts" class="hidden">
-                <p id="alertText">Insert Alert Text Here</p>
-                <button id="closeAlert">Close</button>
-            </div>
+            
         </section>
     </main>
 
@@ -82,6 +98,7 @@
 
     <script src="scripts/burger.js"></script>
     <script src="scripts/weather.js"></script>
+    <script src="scripts/rental.js"></script>
 
 </body>
 </html>

@@ -62,16 +62,15 @@ ul {
     left: 50%;
     transform: translateX(-50%);
 }
-.heroText a{
+.heroText button{
+    cursor: pointer;
     position: absolute;
-    box-sizing: border-box;
+    border: none;
     margin: 0 30%;
     width: 40%;
     border-radius: 10px;
-    text-align: center;
     background-color: red;
     color: white;
-    text-decoration: none;
     font-family: 'Gabarito', 'Poppins', 'Arial';
     top: 45%;
     padding: 10px;
@@ -83,6 +82,37 @@ ul {
     border-radius: 20px;
     width: 20%;
     left: 40%;
+}
+
+/* Rental Information */
+
+#scroll {
+    display: none;
+}
+.rental {
+    background-color: #fff;
+    margin: 0 10%;
+    padding: 030px;
+    border-radius: 20px;
+}
+.rental table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+.rental td {
+    font-family: 'Poppins', 'Arial';
+    text-align: center; 
+    border-bottom: 1px solid #ddd;
+    border-right: solid 1px;
+    padding: 10px
+}
+.rental th {
+    font-family: 'Gabarito', 'Arial';
+    font-weight: 600;
+    border-bottom: solid 3px;
+    border-right: solid 1px;
+    padding:20px;
 }
 
 /* Summary */
@@ -125,6 +155,9 @@ ul {
     grid-gap: 30px;
     margin: 100px;
 }
+.weather ul{
+    background-color: white;
+}
 .weather h3 {
     background-color: rgb(204, 204, 204);
     font-size: 1.5rem;
@@ -132,23 +165,23 @@ ul {
     padding: 10px;
     border-radius: 5px;
     font-family: 'Gabarito';
-    box-shadow:  0 4px 6px #0000005e
 }
 .weatherDetails {
+    background-color: white;
     border-radius: 10px;
     grid-column: 2;
     grid-row: 2;
-    background-color: white;
     text-align: center;
     justify-content: center;
-    box-shadow:  0 4px 6px #0000005e
+    box-shadow:  0 4px 6px #0000005e;
 }
 #forecast {
+    background-color: white;
     border-radius: 10px;
     grid-column: 3;
     grid-row: 2;
-    background-color: white;
     text-align: center;
+    box-shadow:  0 4px 6px #0000005e;
 }
 #forecast p:last-child {
     margin-bottom: 50px;
