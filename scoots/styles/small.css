@@ -142,16 +142,7 @@
         padding: 8px;
       }
       .reserveButton {
-        display: block;
-        text-align: center;
-        padding: 20px;
         margin: 30px 20%;
-        border-radius: 10px;
-        background-color: red;
-        color: white;
-        font-family: 'Gabarito', 'Arial';
-        font-size: 1.5rem;
-        text-decoration: none;
       }
     
     /* Summary */

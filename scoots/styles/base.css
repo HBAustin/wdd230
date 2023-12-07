@@ -2,7 +2,7 @@ body,
 ul {
     margin: 0;
     padding: 0;
-    background-color: #9c9c9c;
+    background-color: #d2d2d2;
 }
 
 /* Header */
@@ -113,6 +113,20 @@ ul {
     border-bottom: solid 3px;
     border-right: solid 1px;
     padding:20px;
+}
+.reserveButton {
+    display: block;
+    text-align: center;
+    padding: 20px;
+    margin: 30px 40%;
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+    font-family: 'Gabarito', 'Arial';
+    font-size: 1.5rem;
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.319);
 }
 
 /* Summary */
