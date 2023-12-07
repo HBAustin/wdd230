@@ -3,15 +3,20 @@ ul {
     margin: 0;
     padding: 0;
 }
+
+/* Header */
+
+#menu {
+    display: none;
+}
 .nav {
+    color: black;
     list-style-type: none;
-    display: flex;
     background-color: #D4002A;
-    justify-content: left;
-    padding: 15px 0;
-    margin-bottom: 0;
+    padding: 15px;
 }
 .nav li {
+    display: inline-block;
     font-size: 1.5rem;
     margin-right: 70px;
     font-family: 'Poppins', 'Arial';
@@ -20,7 +25,7 @@ ul {
     margin-right: 0;
 }
 .nav li:first-child {
-    margin-left: 30px;
+    margin-left: 10px;
 }
 .nav a {
     text-decoration: none;
@@ -28,20 +33,23 @@ ul {
     font-weight: bold;
     transition: all .1s ease-in-out;
 }
+.mobile-controls {
+    display: flex;
+    align-items: center;
+}
 
 /* Main */
 
 .hero {
-    position: relative;
     text-align: center;
     font-family: 'Poppins', 'Arial';
     font-size: 2rem;
-    background-image: url("../images/road.jpg"); opacity: 0.9;
+    background-image: url("../images/road.jpg"); opacity: 0.7;
     background-size: cover;
     background-position: center;
     height: 400px;
 }
-.heroText h1 {
+.heroText h2 {
     font-family: 'Gabarito', 'Poppins', 'Arial';
     font-size: 4rem;
     position: absolute;
@@ -52,20 +60,19 @@ ul {
     left: 50%;
     transform: translateX(-50%);
 }
-.heroText button {
-    opacity: 2;
+.heroText a{
+    text-align: center;
     position: absolute;
     width: 30%;
     top: 50%;
     left: 35%;
-    height: 50px;
-    font-size: 2rem;
-    border: none;
+    padding: 10px;
     font-family: 'Gabarito';
+    font-size: 2rem;
     border-radius: 20px;
-    background-color: #D4002A;
+    background-color: red;
     color: white;
-    cursor: pointer;
+    text-decoration: none;
 }
 .heroText img {
     position: absolute;
@@ -73,4 +80,10 @@ ul {
     border-radius: 20px;
     width: 20%;
     left: 40%;
+}
+
+/* Summary */
+
+.summary {
+    text-align: center;
 }

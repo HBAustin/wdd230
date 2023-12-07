@@ -6,37 +6,47 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link href="https://fonts.googleapis.com/css2?family=Gabarito&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Gabarito&family=Open+Sans:wght@600&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/small.css">
+
     <title>Scoots</title>
 </head>
 <body>
     <header>
-        <ul class="nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#">Rentals</a></li>
-            <li><a href="#">Reservation</a></li>
-            <li><a href="#">Form</a></li>
-        </ul>
+        <nav>
+            <div class="mobile-controls">
+                <button id="menu" class="show"></button>
+            </div>
+            <ul class="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Rentals</a></li>
+                <li><a href="#">Reservation</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
-        <section class="hero"></section>
+        <div class="hero"></div>
 
         <section class="heroText">
-            <h1>Welcome to</h1>
-            <img src="images/scoots.png" alt="scoots logo">
-            <a href="#"><button class="reserve">Make a Reservation</button></a>
+            <h2>Welcome to</h2>
+            <img src="images/scoots-alt.png" alt="scoots logo">
+            <a href="#">Make a Reservation</a>
         </section>
 
-        <section class="summary">
+        <div class="summary">
             <p>rental information placeholder</p>
             <div class="social">
-                <a href="#">Facebook PH</a>
-                <a href="#">Twitter / X PH</a>
-                <a href="#">Instagram PH</a>
+                <p>Social Media Links</p>
+                <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.png" alt="facebook-logo"></a>
+                <a href="https://www.x.com/" target="_blank"><img src="images/twitter.jpg" alt="twitter-logo"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.jpg" alt="instagram-logo"></a>
             </div>
-        </section>
+        </div>
 
         <section class="weather">
             <h2>Current Weather</h2>
@@ -46,5 +56,13 @@
             </div>
         </section>
     </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="scripts/burger.js"></script>
+    <script src="scripts/weather.js"></script>
+    
 </body>
 </html>
