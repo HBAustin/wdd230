@@ -1,16 +1,19 @@
-const currentTemp = document.querySelector('#currentTemp');
-const weatherIcon = document.querySelector('#weatherIcon');
-const captionDesc = document.querySelector('#figcaption');
+const currentTemp = document.getElementById('currentTemp');
+const weatherDesc = document.getElementById('weatherDesc');
+const humidity = document.getElementById('humidity');
+const alertText = document.getElementById('alertText');
+const alerts = document.getElementById('alerts');
+const closeAlert = document.getElementById('closeAlert');
+const forecast = document.getElementById('forecast');
 
-const url = "https://api.openweathermap.org/data/2.5/weather?lat=-29.78&lon=30.83&units=metric&appid=95d6eb3572d3115c722f6784052df38f";
+const weatherUrl = "https://api.openweathermap.org/data/2.5/weather?lat=-29.78&lon=30.83&units=metric&appid=95d6eb3572d3115c722f6784052df38f";
 
-async function apiFetch() {
+async function fetchWeatherData() {
     try {
-        const response = await fetch(url);
+        const response = await fetch(weatherUrl);
         if (response.ok) {
             const data = await response.json();
-            console.log(data);
-            displayResults(data);
+            displayWeather(data);
         } else {
             throw Error(await response.text());
         }
@@ -19,16 +22,72 @@ async function apiFetch() {
     }
 }
 
-function displayResults(weatherData) {
+function displayWeather(weatherData) {
     const temperature = weatherData.main.temp.toFixed(0);
-    const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
-    const desc  = weatherData.weather[0].description;
+    const description = weatherData.weather[0].description;
+    const humidityValue = weatherData.main.humidity;
 
-    currentTemp.innerHML = `<strong>${temperature}</strong> - ${desc}`;
+    currentTemp.textContent = `${temperature}°C`;
+    weatherDesc.textContent = description;
+    humidity.textContent = `${humidityValue}%`;
 
-    weatherIcon.setAttribute('src', iconsrc);
-    weatherIcon.setAttribute('alt', desc);
-    captionDesc.textContent = desc;
-};
+    if (weatherData.hasOwnProperty('alerts') && weatherData.alerts.length > 0) {
+        const alert = weatherData.alerts[0];
+        alertText.textContent = `Alert: ${alert.event}, ${alert.description}`;
+        alerts.classList.remove('hidden');
 
-apiFetch();
+        closeAlert.onclick = () => {
+            alerts.classList.add('hidden');
+        };
+    } else {
+        alerts.classList.add('hidden');
+    }
+    
+    fetchOneDayForecast();
+}
+
+function fetchOneDayForecast() {
+    const forecastUrl = "https://api.openweathermap.org/data/2.5/forecast?lat=-29.78&lon=30.83&units=metric&appid=95d6eb3572d3115c722f6784052df38f";
+
+    fetch(forecastUrl)
+        .then(response => {
+            if (response.ok) {
+                return response.json();
+            } else {
+                throw Error(response.statusText);
+            }
+        })
+        .then(data => {
+            displayForecast(data);
+        })
+        .catch(error => {
+            console.log("Forecast Error:", error);
+        });
+}
+
+function displayForecast(forecastData) {
+    const forecastContainer = document.getElementById('forecast');
+
+    const next24HoursForecast = forecastData.list.filter(entry => {
+        const entryTimestamp = entry.dt * 1000;
+        const currentTimestamp = Date.now();
+        return entryTimestamp > currentTimestamp && entryTimestamp <= currentTimestamp + 24 * 60 * 60 * 1000;
+    });
+
+    if (next24HoursForecast.length > 0) {
+        forecastContainer.innerHTML = "<h3>One Day Forecast</h3>";
+        next24HoursForecast.forEach(entry => {
+            const time = new Date(entry.dt * 1000).toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' });
+            const temperature = entry.main.temp.toFixed(0);
+            const description = entry.weather[0].description;
+
+            const forecastItem = document.createElement('p');
+            forecastItem.textContent = `${time} - ${description}, ${temperature}°C`;
+            forecastContainer.appendChild(forecastItem);
+        });
+    } else {
+        forecastContainer.innerHTML = "<p>No forecast available for the next 24 hours.</p>";
+    }
+}
+
+fetchWeatherData();

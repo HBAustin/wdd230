@@ -16,6 +16,7 @@
     <title>Scoots</title>
 </head>
 <body>
+    
     <header>
         <nav>
             <div class="mobile-controls">
@@ -23,12 +24,13 @@
             </div>
             <ul class="nav">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="#">Rentals</a></li>
-                <li><a href="#">Reservation</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="rent.html">Rentals</a></li>
+                <li><a href="reserve.html">Reservation</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
+
     <main>
         <div class="hero"></div>
 
@@ -38,10 +40,18 @@
             <a href="#">Make a Reservation</a>
         </section>
 
+        <div class="call">
+            <h3>
+                This is the call to action placeholder, the call to action box will
+                be placed here, it will have text telling people to rent a car and
+                will be in a white box
+            </h3>
+        </div>
+
         <div class="summary">
             <p>rental information placeholder</p>
             <div class="social">
-                <p>Social Media Links</p>
+                <p>Check out our Social Media Pages!</p>
                 <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.png" alt="facebook-logo"></a>
                 <a href="https://www.x.com/" target="_blank"><img src="images/twitter.jpg" alt="twitter-logo"></a>
                 <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.jpg" alt="instagram-logo"></a>
@@ -49,20 +59,29 @@
         </div>
 
         <section class="weather">
-            <h2>Current Weather</h2>
-            
             <div class="weatherDetails">
-                <p>Placeholder weather details</p>
+                <h3>Current Weather</h3>
+                <p><strong>Temperature:</strong> <span id="currentTemp"></span></p>
+                <p><strong>Description:</strong> <span id="weatherDesc"></span></p>
+                <p><strong>Humidity:</strong> <span id="humidity"></span></p>
+            </div>
+            <div id="forecast">
+                <h3>One Day Forecast</h3>
+                <!-- Forecast details will be populated here -->
+            </div>
+            <div id="alerts" class="hidden">
+                <p id="alertText">Insert Alert Text Here</p>
+                <button id="closeAlert">Close</button>
             </div>
         </section>
     </main>
 
     <footer>
-
+        <p>This is where the footer will be</p>
     </footer>
 
     <script src="scripts/burger.js"></script>
     <script src="scripts/weather.js"></script>
-    
+
 </body>
 </html>
