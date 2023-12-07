@@ -206,7 +206,9 @@ ul {
 footer {
     background-color: #D4002A;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: white;
-    font-family: 'Poppins'
+    font-family: 'Poppins', 'Arial';
+    padding: 5px;
+    width: 100%;
 }
