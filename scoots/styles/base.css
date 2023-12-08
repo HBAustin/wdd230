@@ -252,6 +252,7 @@ footer {
     padding: 20px;
     text-align: center;
     border-radius: 20px;
+    margin-bottom: 30px;
 }
 #scooterSection h3,
 #atvSection h3,
@@ -269,8 +270,13 @@ footer {
     font-family: 'Poppins', 'Arial';
     font-size: 1.2rem
 }
-
-#scooterSection,
-#atvSection div:last-child {
+#scooterSection div,
+#atvSection div,
+#carSection div {
+    border-bottom: solid 1px black;
+}
+#scooterSection div:last-child,
+#atvSection div:last-child,
+#carSection div:last-child {
     border-bottom: none;
 }
