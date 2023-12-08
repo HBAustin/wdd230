@@ -55,8 +55,7 @@ ul {
     font-family: 'Gabarito', 'Poppins', 'Arial';
     font-size: 4rem;
     position: absolute;
-    top: 15%;
-    transform: translateY(-50%);
+    top: 20%;
     margin: 0;
     color: black;
     left: 50%;
@@ -78,7 +77,7 @@ ul {
 }
 .heroText img {
     position: absolute;
-    top: 25%;
+    top: 30%;
     border-radius: 20px;
     width: 20%;
     left: 40%;
@@ -230,4 +229,99 @@ footer {
     font-family: 'Poppins', 'Arial';
     padding: 5px;
     width: 100%;
+}
+
+
+
+/* Rent Page */
+
+.rentalHeader {
+    color: white;
+    background-color: #D4002A;
+    text-align: center;
+    margin: 30px 40%;
+    border-radius: 10px;
+    font-family: 'Gabarito', 'Arial';
+    box-shadow: 0 4px 6px #00000051;
+}
+#scooterSection {
+    background-color: white;
+    margin: 0 10%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+}
+#scooterSection h3 {
+    background-color:#767676;
+    padding: 10px;
+    margin: 10px 35%;
+    border-radius: 8px;
+    font-family: 'Gabarito', 'Arial';
+    color: white;
+}
+#scooterSection p {
+    font-family: 'Poppins', 'Arial';
+    font-size: 1.2rem
+}
+#scooterSection div {
+    border-bottom: solid 1px black;
+}
+#scooterSection div:last-child {
+    border-bottom: none;
+}
+
+/* atv section */
+
+#atvSection {
+    background-color: white;
+    margin: 50px 10%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+}
+#atvSection h3 {
+    background-color:#767676;
+    padding: 10px;
+    margin: 10px 35%;
+    border-radius: 8px;
+    font-family: 'Gabarito', 'Arial';
+    color: white;
+}
+#atvSection p {
+    font-family: 'Poppins', 'Arial';
+    font-size: 1.2rem
+}
+#atvSection div {
+    border-bottom: solid 1px black;
+}
+#atvSection div:last-child {
+    border-bottom: none;
+}
+
+/* car section */
+
+#carSection {
+    background-color: white;
+    margin: 50px 10%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+}
+#carSection h3 {
+    background-color:#767676;
+    padding: 10px;
+    margin: 10px 35%;
+    border-radius: 8px;
+    font-family: 'Gabarito', 'Arial';
+    color: white;
+}
+#carSection p {
+    font-family: 'Poppins', 'Arial';
+    font-size: 1.2rem
+}
+#carSection div {
+    border-bottom: solid 1px black;
+}
+#carSection div:last-child {
+    border-bottom: none;
 }

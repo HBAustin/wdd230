@@ -3,9 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="icon" href="favicon.ico">
+
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito&family=Open+Sans:wght@600&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/small.css">
+
+    <title>Scoots | Rentals</title>
 </head>
 <body>
-    <a href="index.html">home</a>
+
+    <header>
+        <nav>
+            <div class="mobile-controls">
+                <button id="menu" class="show"></button>
+            </div>
+            <ul class="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rent.html">Rentals</a></li>
+                <li><a href="reserve.html">Reservation</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="rentalHeader">
+            <h1>Available Rentals</h1>
+        </div>
+        
+        <section class="rentals">
+            <div id="scooterSection"></div>
+            <div id="atvSection"></div>
+            <div id="carSection"></div>
+        </section>
+    </main>
+
+    <footer>
+        <div id="date">
+            <p>&copy; <span id="year"></span> Hayden Austin | South Africa</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+
+    <script src="scripts/fullRental.js"></script>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/burger.js"></script>
+
 </body>
 </html>
