@@ -216,4 +216,19 @@
     #carSection h3 {
         margin: 10px 5%;
     }
+
+
+    /* Reserve page Form */
+
+    .reserveMain {
+        margin: 0;
+    }
+    .reservation-form {
+        background-color: white;
+        width: 100%;
+        margin: 80px 5%;
+    }
+    #chooseDate {
+        width: 100%;
+    }
 }

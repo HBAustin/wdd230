@@ -335,6 +335,7 @@ footer {
   .reservation-form input:required:invalid,
   .reservation-form select:required:invalid {
     border-color: red;
+    font-family: 'Poppins';
   }
   
   .reservation-form input:required:valid,
