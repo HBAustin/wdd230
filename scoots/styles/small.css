@@ -83,6 +83,7 @@
 
     .hero {
         height: 500px;
+        border-radius: 8px;
     }
     .heroText h2 {
         display: none;
@@ -93,6 +94,7 @@
         left: 9%;
         top: 25%;
         border: solid 2px red;
+
     }
     .heroText button {
         width: 80%;
@@ -185,6 +187,7 @@
     .closeable-message {
         top: 80px;
         text-align: right;
+        margin: 0 10px;
         padding: 10px
     }
 
