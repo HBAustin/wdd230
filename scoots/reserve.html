@@ -65,9 +65,19 @@
                     <option value="option6">Jeep Wrangler - 2 Door</option>
                     <option value="" disabled>------------------------</option>
                 </select>
-                <button type="submit">Submit</button>
+                <button type="submit">Reserve your Ride</button>
             </form>
         </section>
+
+        <div id="confirmationModal" class="modal">
+            <div class="modal-content">
+              <p>Are you ready to reserve?</p>
+              <p>Make sure to check your details before reserving</p>
+              <button id="confirmModalButton">Yes</button>
+              <button id="cancelModalButton">Cancel</button>
+            </div>
+          </div>
+
     </main>
 
     <footer>
@@ -79,6 +89,7 @@
 
     <script src="scripts/burger.js"></script>
     <script src="scripts/getDates.js"></script>
+    <script src="scripts/confirm.js"></script>
 
 </body>
 </html>
