@@ -232,6 +232,7 @@
         width: 100%;
     }
     .modal {
+        display: none;
         top: 50%;
         width: 80%;
         height: 50%;
