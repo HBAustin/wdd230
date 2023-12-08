@@ -244,69 +244,17 @@ footer {
     font-family: 'Gabarito', 'Arial';
     box-shadow: 0 4px 6px #00000051;
 }
-#scooterSection {
+#scooterSection,
+#atvSection,
+#carSection {
     background-color: white;
     margin: 0 10%;
     padding: 20px;
     text-align: center;
     border-radius: 20px;
 }
-#scooterSection h3 {
-    background-color:#767676;
-    padding: 10px;
-    margin: 10px 35%;
-    border-radius: 8px;
-    font-family: 'Gabarito', 'Arial';
-    color: white;
-}
-#scooterSection p {
-    font-family: 'Poppins', 'Arial';
-    font-size: 1.2rem
-}
-#scooterSection div {
-    border-bottom: solid 1px black;
-}
-#scooterSection div:last-child {
-    border-bottom: none;
-}
-
-/* atv section */
-
-#atvSection {
-    background-color: white;
-    margin: 50px 10%;
-    padding: 20px;
-    text-align: center;
-    border-radius: 20px;
-}
-#atvSection h3 {
-    background-color:#767676;
-    padding: 10px;
-    margin: 10px 35%;
-    border-radius: 8px;
-    font-family: 'Gabarito', 'Arial';
-    color: white;
-}
-#atvSection p {
-    font-family: 'Poppins', 'Arial';
-    font-size: 1.2rem
-}
-#atvSection div {
-    border-bottom: solid 1px black;
-}
-#atvSection div:last-child {
-    border-bottom: none;
-}
-
-/* car section */
-
-#carSection {
-    background-color: white;
-    margin: 50px 10%;
-    padding: 20px;
-    text-align: center;
-    border-radius: 20px;
-}
+#scooterSection h3,
+#atvSection h3,
 #carSection h3 {
     background-color:#767676;
     padding: 10px;
@@ -315,13 +263,14 @@ footer {
     font-family: 'Gabarito', 'Arial';
     color: white;
 }
-#carSection p {
+#scooterSection p,
+#atvSection p,
+#carSection {
     font-family: 'Poppins', 'Arial';
     font-size: 1.2rem
 }
-#carSection div {
-    border-bottom: solid 1px black;
-}
-#carSection div:last-child {
+
+#scooterSection,
+#atvSection div:last-child {
     border-bottom: none;
 }

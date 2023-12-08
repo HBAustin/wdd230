@@ -110,8 +110,7 @@
         margin: 0 10% 30px;
         font-size: 1.5rem;
         padding: 10px;
-        background-color: #D4002A;
-        color: white;
+        background-color: #ddd;
         font-family: 'Gabarito', 'Arial';
         border-radius: 10px;
     }
@@ -166,9 +165,6 @@
 
     /* Weather */ 
 
-    #alerts {
-        display: none;
-    }
     .weather {
         margin: 30px 5%;
         display: grid;
