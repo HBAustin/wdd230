@@ -283,3 +283,72 @@ footer {
 #carSection div:last-child {
     border-bottom: none;
 }
+
+/* Reserve page Form */
+
+.reserveMain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 60px 0
+  }
+  .reservation-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px #0000003e;
+    margin: 0 30%;
+    width: 100%;
+  }
+  
+  .reservation-form h1 {
+    background-color: #D4002A;
+    color: white;
+    text-align: center;
+    margin: 20px 20%;
+    padding: 10px;
+    font-family: 'Gabarito', 'Arial';
+    border-radius: 10px;
+  }
+  
+  .reservation-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .reservation-form input[type="date"],
+  .reservation-form input[type="text"],
+  .reservation-form input[type="email"],
+  .reservation-form input[type="number"],
+  .reservation-form select,
+  .reservation-form button {
+    width: 100%;
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  .reservation-form input:required:invalid,
+  .reservation-form select:required:invalid {
+    border-color: red;
+  }
+  
+  .reservation-form input:required:valid,
+  .reservation-form select:required:valid {
+    border-color: green;
+  }
+  
+  .reservation-form button {
+    background-color: red;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .reservation-form button:hover {
+    background-color: #980000;
+  }

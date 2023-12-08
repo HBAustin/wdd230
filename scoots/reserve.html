@@ -31,8 +31,43 @@
         </nav>
     </header>
 
-    <main>
+    <main class="reserveMain">
+        <section class="reservation-form">
+            <h1>Rental Reservation</h1>
+            <form id="rentalForm" action="thankyou.html">
 
+                <label for="date">When would you like to book?:</label>
+                <input type="date" id="chooseDate" name="date" required>
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="Name" required>
+
+                <label for="name">Surname</label>
+                <input type="text" id="name" name="Surname" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="someone@email.com">
+
+                <label for="phone">Phone Number:</label>
+                <input type="number" id="phone" name="call" required>
+
+                <label for="vehicle">Vehicle</label>
+                <select id="vehicle" name="Vehicle">
+                    <option value="" disabled selected>-- Please Select --</option>
+                    <option value="" disabled>------------------------</option>
+                    <option value="option1">Honda Metro Scooter</option>
+                    <option value="option2">Honda Dio Scooter</option>
+                    <option value="option3">Honda PCX 150 Scooter</option>
+                    <option value="" disabled>------------------------</option>
+                    <option value="option4">Honda Pioneer ATV</option>
+                    <option value="" disabled>------------------------</option>
+                    <option value="option5">Jeep Wrangler - 4 Door with A/C</option>
+                    <option value="option6">Jeep Wrangler - 2 Door</option>
+                    <option value="" disabled>------------------------</option>
+                </select>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
     </main>
 
     <footer>
