@@ -102,15 +102,15 @@ ul {
 .rental td {
     font-family: 'Poppins', 'Arial';
     text-align: center; 
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #000000;
     border-right: solid 1px;
-    padding: 10px
+    border-left: solid 1px;
+    padding: 10px;
 }
 .rental th {
     font-family: 'Gabarito', 'Arial';
     font-weight: 600;
     border-bottom: solid 3px;
-    border-right: solid 1px;
     padding:20px;
 }
 .reserveButton {
@@ -169,7 +169,7 @@ ul {
     margin: 100px;
 }
 .weather h3 {
-    background-color: rgb(204, 204, 204);
+    background-color: #cccccc;
     font-size: 1.5rem;
     margin: 40px 5%;
     padding: 10px;
@@ -217,6 +217,9 @@ ul {
     cursor: pointer;
     padding: 5px 12px;
     border-radius: 10px;
+}
+.closebtn:hover {
+    background-color: #ce0000;
 }
 
 /* Footer */
