@@ -5,6 +5,7 @@ async function fetchWeatherData() {
         if (response.ok) {
             const data = await response.json();
             displayCurrentWeather(data);
+            displayHighTemperature(data);
         } else {
             throw new Error('Weather data request failed');
         }
@@ -23,47 +24,68 @@ function displayCurrentWeather(weatherData) {
     document.getElementById('humidity').textContent = `${humidity}%`;
 }
 
-async function fetchOneDayForecast() {
+document.addEventListener('click', function (event) {
+    if (event.target.classList.contains('closebtn')) {
+        const closeableMessage = event.target.closest('.closeable-message');
+        if (closeableMessage) {
+            closeableMessage.style.display = 'none';
+        }
+    }
+});
+
+function displayHighTemperature(weatherData) {
+    const maxTemp = weatherData.main.temp_max.toFixed(0);
+    const closeableMessage = document.createElement('div');
+    closeableMessage.classList.add('closeable-message');
+    closeableMessage.innerHTML = `<p>Today's high temperature: ${maxTemp}°C <span class="closebtn"> ✕ </span></p>`;
+
+    const header = document.querySelector('header');
+    header.insertBefore(closeableMessage, header.firstChild);
+}
+
+async function fetchOneDayThreePMForecast() {
     const forecastUrl = "https://api.openweathermap.org/data/2.5/forecast?lat=20.45&lon=-86.90&units=metric&appid=95d6eb3572d3115c722f6784052df38f";
     try {
         const response = await fetch(forecastUrl);
         if (response.ok) {
             const data = await response.json();
-            displayOneDayForecast(data);
+            displayOneDayThreePMForecast(data);
         } else {
-            throw new Error('One day forecast request failed');
+            throw new Error('One day 3:00 pm forecast request failed');
         }
     } catch (error) {
         console.log(error);
     }
 }
 
-function displayOneDayForecast(forecastData) {
-    const forecastContainer = document.getElementById('forecast');
-    const next24HoursForecast = forecastData.list.filter(entry => {
+function displayOneDayThreePMForecast(forecastData) {
+    const tomorrowForecast = forecastData.list.find(entry => {
         const entryTimestamp = entry.dt * 1000;
-        const currentTimestamp = Date.now();
-        return entryTimestamp > currentTimestamp && entryTimestamp <= currentTimestamp + 24 * 60 * 60 * 1000;
+        const tomorrowTimestamp = new Date().setHours(0, 0, 0, 0) + 24 * 60 * 60 * 1000;
+        const threePMTimestamp = tomorrowTimestamp + 15 * 60 * 60 * 1000; 
+
+        return entryTimestamp > tomorrowTimestamp && entryTimestamp <= threePMTimestamp;
     });
 
-    if (next24HoursForecast.length > 0) {
-        const forecastList = document.createElement('ul');
-        next24HoursForecast.forEach(entry => {
-            const time = new Date(entry.dt * 1000).toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' });
-            const temperature = entry.main.temp.toFixed(0);
-            const description = entry.weather[0].description;
+    const forecastContainer = document.getElementById('forecast');
+    if (tomorrowForecast) {
+        const temperature = tomorrowForecast.main.temp.toFixed(0);
+        const description = tomorrowForecast.weather[0].description;
+        const iconCode = tomorrowForecast.weather[0].icon;
+        const iconUrl = `http://openweathermap.org/img/w/${iconCode}.png`;
 
-            const listItem = document.createElement('p');
-            listItem.textContent = `${time} - ${description}, ${temperature}°C`;
-            forecastList.appendChild(listItem);
-        });
+        const forecastInfo = document.createElement('p');
+        forecastInfo.textContent = `3:00 PM Forecast - ${description}, ${temperature}°C`;
 
-        forecastContainer.innerHTML = "<h3>One Day Forecast</h3>";
-        forecastContainer.appendChild(forecastList);
+        const icon = document.createElement('img');
+        icon.setAttribute('src', iconUrl);
+        forecastInfo.appendChild(icon);
+
+        forecastContainer.appendChild(forecastInfo);
     } else {
-        forecastContainer.innerHTML = "<h3>One Day Forecast</h3><p>No forecast available for the next 24 hours.</p>";
+        forecastContainer.innerHTML = "<h3>Tomorrows Weather</h3><p>No forecast available for 3:00 PM tomorrow.</p>";
     }
 }
 
 fetchWeatherData();
-fetchOneDayForecast();
+fetchOneDayThreePMForecast();

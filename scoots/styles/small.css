@@ -181,4 +181,17 @@
         grid-row: 2;
         margin-bottom: 30px;
     }
+    .closeable-message {
+        top: 80px;
+        text-align: right;
+        padding: 10px
+    }
+
+    /* Footer */
+
+    footer {
+        position: absolute;
+        box-sizing: border-box;
+        text-align: center;
+    }
 }

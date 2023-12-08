@@ -169,9 +169,6 @@ ul {
     grid-gap: 30px;
     margin: 100px;
 }
-.weather ul{
-    background-color: white;
-}
 .weather h3 {
     background-color: rgb(204, 204, 204);
     font-size: 1.5rem;
@@ -179,6 +176,9 @@ ul {
     padding: 10px;
     border-radius: 5px;
     font-family: 'Gabarito';
+}
+.weather p {
+    font-family: 'Poppins', 'Arial';
 }
 .weatherDetails {
     background-color: white;
@@ -199,6 +199,25 @@ ul {
 }
 #forecast p:last-child {
     margin-bottom: 50px;
+}
+.closeable-message {
+    background-color: #fc6055;
+    color: white;
+    font-size: 1rem;
+    font-family: 'Gabarito', 'Arial';
+    padding: 0;
+    position: absolute;
+    top: 60px; 
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 1;
+}
+.closebtn {
+    background-color: red;
+    cursor: pointer;
+    padding: 5px 12px;
+    border-radius: 10px;
 }
 
 /* Footer */
