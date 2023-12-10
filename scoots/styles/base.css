@@ -154,6 +154,7 @@ ul {
 .call h3{
     text-align: center;
     background-color: white;
+    color: black;
     margin: 30px 20%;
     font-size: 1.5rem;
     font-family: 'Poppins', 'Arial';
@@ -251,6 +252,20 @@ footer {
     font-family: 'Gabarito', 'Arial';
     box-shadow: 0 4px 6px #00000051;
 }
+
+#scooterSection h4,
+#atvSection h4,
+#carSection h4 {
+    background-color: #D4002A;
+    font-family: 'Gabarito', 'Arial';
+    color: white;
+    margin: 0 42%;
+    padding: 5px;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px #0000003e;
+    font-size: 1rem;
+}
+
 #scooterSection,
 #atvSection,
 #carSection {
@@ -402,6 +417,8 @@ footer {
 label {
     display: block;
     margin-bottom: 5px;
+    font-size: 2rem;
+    font-family: 'Gabarito', 'Arial'
 }
 
 input[type="text"],
@@ -449,4 +466,53 @@ iframe {
     margin: 5%;
     border-radius: 10px;
     box-shadow: 0 4px 6px #0000003e;
+    background-color: #D4002A;
+    padding: 1px;
+}
+
+/* Contacted Page /Thank You Page */
+
+.contacted h2, .thankYou h2 {
+    text-align: center;
+    text-decoration: underline;
+    font-family: 'Gabarito', 'Arial';
+    font-size: 2rem;
+    background-color: white;
+    margin: 40px 20% 0;
+    border-top-left-radius:20px; 
+    border-top-right-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 6px 6px #0000003e;
+}
+.contacted p, .thankYou p{
+    text-align: center;
+    font-family: 'Poppins', 'Arial';
+    background-color: white;
+    font-size: 2rem;
+    margin: 0 20% 40px;
+    border-bottom-left-radius:20px; 
+    border-bottom-right-radius: 20px;
+    box-shadow: 0 6px 6px #0000003e;
+    padding: 40px;
+}
+.contacted a, .thankYou a {
+    position: absolute;
+    width: 15%;
+    text-align: center;
+    margin-left: 42.5%;
+    color: white;
+    background-color: red;
+    text-decoration: none;
+    padding: 10px 0;
+    font-size: 1.5rem;
+    font-family: 'Gabarito', 'Arial';
+    border-radius: 20px;
+    box-shadow: 0 4px 6px #0000003e
+}
+.contacted a:hover {
+    background-color: #970000;
+}
+.footContacted {
+    position: fixed;
+    bottom: 0;
 }

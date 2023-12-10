@@ -215,7 +215,16 @@
     #carSection h3 {
         margin: 10px 5%;
     }
-
+    #scooterSection h4,
+    #atvSection h4,
+    #carSection h4 {
+        background-color: #D4002A;
+        font-family: 'Gabarito', 'Arial';
+        color: white;
+        margin: 0 10%;
+        padding: 10px;
+        font-size: 1.2rem;
+    }
 
     /* Reserve page Form */
 
@@ -244,4 +253,40 @@
         font-size: 1.5rem;
         font-family: 'Poppins', 'Arial';
       }
+
+    /* contact for */
+
+    #contactForm {
+        margin-top: 80px;
+        font-size: 1.5rem;
+    }
+    .getHelp {
+        height: 80px;
+        font-size: 1.5rem;
+    }
+    .contactPage h3 {
+        margin: 0;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        font-size: 1.5rem;
+    }
+
+    /* Contacted / Thank you */
+
+    .contacted h2, .thankYou h2 {
+        margin: 80px 5% 0;
+        padding: 10px;
+    }
+    .contacted p, .thankYou p{
+        font-size: 1.3rem;
+        margin: 0 5% 40px;
+        padding: 10px;
+    }
+    .contacted a, .thankYou a {
+        width: 90%;
+        margin: 5%;
+        left: 0;
+    }
 }

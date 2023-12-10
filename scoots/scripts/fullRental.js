@@ -13,12 +13,13 @@ document.addEventListener('DOMContentLoaded', async function() {
             const scooterElement = document.createElement('div');
             scooterElement.innerHTML = `
                 <h3>${type}</h3>
-                <h4>Reserve Price</h4>
                 <p>Max People: ${max}</p>
-                <p>Half Day (Reserve): $${halfDay_reserve}</p>
-                <p>Full Day (Reserve): $${fullDay_reserve}</p>
-                <p>Half Day (Walk-in): $${halfDay_walk}</p>
-                <p>Full Day (Walk-in): $${fullDay_walk}</p>
+                <h4> Reserve Price </h4>
+                <p>Half Day (3 hours): $${halfDay_reserve}</p>
+                <p>Full Day : $${fullDay_reserve}</p>
+                <h4>Walk-in price</h4>
+                <p>Half Day (3 hours): $${halfDay_walk}</p>
+                <p>Full Day: $${fullDay_walk}</p>
                 <img src="${image}" alt="${type}" />
             `;
             scooterSection.appendChild(scooterElement);
@@ -30,12 +31,13 @@ document.addEventListener('DOMContentLoaded', async function() {
             const atvElement = document.createElement('div');
             atvElement.innerHTML = `
                 <h3>${type}</h3>
-                <h4>Reserve Price</h4>
                 <p>Max People: ${max}</p>
-                <p>Half Day (Reserve): $${halfDay_reserve}</p>
-                <p>Full Day (Reserve): $${fullDay_reserve}</p>
-                <p>Half Day (Walk-in): $${halfDay_walk}</p>
-                <p>Full Day (Walk-in): $${fullDay_walk}</p>
+                <h4> Reserve Price </h4>
+                <p>Half Day (3 hours): $${halfDay_reserve}</p>
+                <p>Full Day : $${fullDay_reserve}</p>
+                <h4>Walk-in price</h4>
+                <p>Half Day (3 hours): $${halfDay_walk}</p>
+                <p>Full Day: $${fullDay_walk}</p>
                 <img src="${image}" alt="${type}" />
             `;
             atvSection.appendChild(atvElement);
@@ -47,12 +49,13 @@ document.addEventListener('DOMContentLoaded', async function() {
             const carElement = document.createElement('div');
             carElement.innerHTML = `
                 <h3>${type}</h3>
-                <h4>Reserve Price</h4>
                 <p>Max People: ${max}</p>
+                <h4> Reserve Price </h4>
                 <p>Half Day (3 hours): $${halfDay_reserve}</p>
-                <p>Full Day (Reserve): $${fullDay_reserve}</p>
-                <p>Walk-in Half Day : $${halfDay_walk}</p>
-                <p>Walk-in Full Day : $${fullDay_walk}</p>
+                <p>Full Day : $${fullDay_reserve}</p>
+                <h4>Walk-in price</h4>
+                <p>Half Day (3 hours): $${halfDay_walk}</p>
+                <p>Full Day: $${fullDay_walk}</p>
                 <img src="${image}" alt="${type}" />
             `;
             carSection.appendChild(carElement);
