@@ -45,6 +45,7 @@
         height: 60px;
     }
     #menu.show::before {
+        font-family: 'Gabarito', 'Arial';
         content: 'Menu ⌘';
         vertical-align: middle;
         display: inline-block;
