@@ -96,6 +96,7 @@ ul {
     margin: 0 10%;
     padding: 030px;
     border-radius: 20px;
+    box-shadow: 0 4px 6px #0000003e;
 }
 .rental table {
     width: 100%;
@@ -174,6 +175,7 @@ ul {
 }
 .weather h3 {
     background-color: #cccccc;
+    color: black;
     font-size: 1.5rem;
     margin: 40px 5%;
     padding: 10px;
@@ -190,7 +192,7 @@ ul {
     grid-row: 2;
     text-align: center;
     justify-content: center;
-    box-shadow:  0 4px 6px #0000005e;
+    box-shadow:  0 4px 6px #0000003e;
 }
 #forecast {
     background-color: white;
@@ -342,10 +344,11 @@ footer {
   .reservation-form input[type="number"],
   .reservation-form select,
   .reservation-form button {
+    font-family: 'Gabarito', 'Arial';
     width: 100%;
     margin: 10px auto;
     padding: 10px;
-    font-size: 16px;
+    font-size: 1.5rem;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-sizing: border-box;
@@ -425,6 +428,7 @@ input[type="text"],
 input[type="email"],
 textarea {
     width: calc(100% - 18px);
+    font-size: 1.5rem;
     padding: 8px;
     margin-bottom: 10px;
     border-radius: 4px;

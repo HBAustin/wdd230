@@ -45,7 +45,7 @@
         height: 60px;
     }
     #menu.show::before {
-        font-family: 'Gabarito', 'Arial';
+        font-family: 'Gabarito', 'Poppins', 'Arial';
         content: 'Menu ⌘';
         vertical-align: middle;
         display: inline-block;
@@ -57,6 +57,7 @@
         font-size: 1.5rem;
     }
     #menu::before {
+        font-family: 'Gabarito', 'Poppins', 'Arial';
         content: 'Menu ✗';
         vertical-align: middle;
         display: inline-block;
@@ -232,6 +233,11 @@
     .reserveMain {
         margin: 0;
     }
+    .reserveMain h1 {
+        width: 94%;
+        margin: 0 0 20px;
+        font-size: 1.5rem;
+    }
     .reservation-form {
         background-color: white;
         width: 100%;
@@ -246,14 +252,14 @@
         width: 80%;
         height: 50%;
         left: 50%;
-      }
+    }
       .modal-content button {
         width: 70%;
         height: 70px;
         margin-bottom: 20px;
         font-size: 1.5rem;
         font-family: 'Poppins', 'Arial';
-      }
+    }
 
     /* contact for */
 

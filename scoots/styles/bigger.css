@@ -1,0 +1,112 @@
+@media (min-width: 1500px) {
+    body,
+    ul {
+        margin: 0;
+        padding: 0;
+        background-color: #d2d2d2;
+    }
+
+    /* Nav */
+
+    .nav {
+        color: black;
+        list-style-type: none;
+        background-color: #D4002A;
+        padding: 15px;
+    }
+    .nav li {
+        display: inline-block;
+        font-size: 2rem;
+        margin-right: 70px;
+        font-family: 'Poppins', 'Arial';
+    }
+
+    /* Home Page */
+
+    .hero {
+        font-family: 'Poppins', 'Arial';
+        height: 600px;
+    }
+    .heroText h2 {
+        font-size: 5rem;
+        top: 15%;
+    }
+    .heroText button{
+        font-size: 2rem;
+        cursor: pointer;
+    }
+    .heroText img {
+        width: 30%;
+        left: 35%;
+        top: 25%;
+    }
+
+    /* Summary */
+
+    .call h3{
+        margin: 30px 15%;
+        font-size: 2.5rem;
+        border-radius: 20px;
+        padding: 50px;
+    }
+    .social p {
+        font-size: 4rem;
+        background-color: white;
+        margin: 40px 20%;
+        border-radius: 20px;
+    }
+    .social img {
+        width: 120px;
+        border-radius:40px;
+    }
+
+    /* Rental Information */
+
+    .rental {
+        background-color: #fff;
+        margin: 0 10%;
+        padding: 30px;
+        border-radius: 40px;
+    }
+    .rental td {
+        font-size: 2rem;
+    }
+    .rental th {
+        font-size: 2.5rem;
+        padding:20px;
+    }
+    .reserveButton {
+        margin: 30px 30%;
+        font-size: 3rem;
+        border-radius: 20px;
+    }
+
+    /* Weather */
+
+    .weather h3 {
+        font-size: 2.5rem;
+        border-radius: 10px;
+    }
+    .weather p {
+        font-family: 'Poppins', 'Arial';
+        font-size: 1.5rem
+    }
+    .weatherDetails {
+        border-radius: 30px;
+    }
+    #forecast {
+        border-radius: 30px;
+    }
+    .closeable-message {
+        font-size: 1.8rem;
+    }
+    .closebtn {
+        background-color: red;
+        cursor: pointer;
+        padding: 5px 12px;
+        border-radius: 10px;
+    }
+    .closebtn:hover {
+        background-color: #ce0000;
+    }
+}
