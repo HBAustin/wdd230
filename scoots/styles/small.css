@@ -243,6 +243,9 @@
         width: 100%;
         margin: 80px 5%;
     }
+    .reservation-form label {
+        font-size: 1.2rem;
+    }
     #chooseDate {
         width: 100%;
     }
@@ -259,6 +262,14 @@
         margin-bottom: 20px;
         font-size: 1.5rem;
         font-family: 'Poppins', 'Arial';
+    }
+    .reservation-form input[type="date"],
+    .reservation-form input[type="text"],
+    .reservation-form input[type="email"],
+    .reservation-form input[type="number"],
+    .reservation-form select,
+    .reservation-form button {
+      font-size: 1rem;
     }
 
     /* contact for */
